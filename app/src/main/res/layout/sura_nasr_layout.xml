@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="إِذَا جَاء نَصْرُ اللَّهِ وَالْفَتْحُ"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="5dp"
+                    android:text="وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="5dp"
+                    android:text="فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="বাংলা উচ্চারণ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="10dp"
+                    android:text="১.ইজাযা আনাসরুল্লাহি ওয়াল ফাতহ।\n২.ওয়ারা আইতান্নাসা ইয়াদখুলুনা ফি-দ্বীনিল্লাহি আফওয়াজা।\n৩ .ফাসাব্বিহ বিহামদি রাব্বিকা ওয়াস্তাগফিরহ। ইন্নাহু কা&apos;না তাওয়্যাবা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="বাংলা অর্থঃ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="10dp"
+                    android:text="১.যখন আল্লাহর সাহায্য ও বিজয় আসবে,\n২.এবং আপনি মানুষকে দলে দলে আল্লাহর দ্বীনে প্রবেশ করতে দেখবেন,\n৩.তখন আপনি আপনার পালনকর্তার পবিত্রতা বর্ণনা করুন এবং তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয় তিনি ক্ষমাকারী। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

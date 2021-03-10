@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="قُلْ يَا أَيُّهَا الْكَافِرُونَ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="لَا أَعْبُدُ مَا تَعْبُدُونَ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="لَكُمْ دِينُكُمْ وَلِيَ دِينِ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="বাংলা উচ্চারণ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="10dp"
+                    android:text="১.কুল্ ইয়া য় আইয়ুহাল্ কা-ফিরূনা । ২.লা য় আ’বুদু মা তা’বুদূনা। ৩.অলা য় আন্তুম্ ‘আ-বিদূনা মা য় আ’বুদ্। ৪.অলা য় আনা ‘আ-বিদুম্ মা-‘আবাততুম্। ৫.অলা য় আন্তুম্ ‘আ-বিদূনা মা য় আ’বুদ্। ৬.লাকুম্ দীনুকুম্ অলিয়াদীন্।  "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="5dp"
+                    android:text="১.বল,‘হে কাফিররা।\n২.তোমরা যার ‘ইবাদাত কর আমি তার ‘ইবাদাত করি না।\n৩.এবং আমি যার ‘ইবাদাত করি তোমরা তার ‘ইবাদাতকারী নও’।\n৪.আর তোমরা যার ‘ইবাদত করছ আমি তার ‘ইবাদাতকারী হব না’।\n৫.‘আর আমি যার ‘ইবাদাত করি তোমরা তার ‘ইবাদাতকারী হবে না’।\n৬.তোমাদের জন্য তোমাদের দীন আর আমার জন্য আমার দীন।’"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

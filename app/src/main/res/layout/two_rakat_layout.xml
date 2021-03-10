@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="দুই রাকাত নামাজের নিয়ম সমূহ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১.প্রথমে অজু করে পবিত্র হয়ে জায়নামাজে দাঁড়িয়ে জায়নামাজের দোয়া পড়বে।"
+
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="২.মনে মনে নিয়ত করুন,কোন ওয়াক্তের নামাজ এখন পড়বেন? সূন্নত,ফরজ,ওয়াজিব না নফল নিয়তে তা উল্লেখ করুন।এবং আল্লাহু আকবার বলে তাকবীরে তাহরিমার পরে নারীরা বুকের উপর ও পুরুষেরা নাভীর উপরে হাত বাঁধবে (বাম হাঁতের উপরে ডান হাত)। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:text="৩.সানা পড়বে। "
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৪.এবার মনে মনে -আউযুবিল্লাহি মিনাশ শাইতানির রাজিম ও বিসমিল্লাহির রাহমানির রাহীম পাঠ করুন।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৫.সূরা ফাতিহা পড়বে এবং তারপরে অন্য একটি সূরা মিলাবে।"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৬.ধীর-স্থিরভাবে রুকু ও দুই সিজদা করে উঠে দাঁড়াবে এবং পূর্বের ন্যায় হাত বাঁধবে।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৭.সূরা ফাতিহা পড়বে এবং অন্য কোন সূরা মিলাবে।"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৮.সম্পূর্ণভাবে রুকু-সেজদা করবে এবং উঠে না দাঁড়িয়ে বৈঠকে বসবে। বৈঠকে তাশাহুদ,দরুদ ও দোয়া মাসুরা পাঠ করবে। অতঃপর ডানে ও বামে সালাম ফিরিয়ে নামাজ শেষ করবে।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

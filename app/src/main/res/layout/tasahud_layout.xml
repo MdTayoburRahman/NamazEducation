@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="তাশাহুদ বা আত্তাহিয়্যাতু"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:text="التَّحِيّـاتُ للهِ وَالصَّلَـواتُ والطَّيِّـبات ، السَّلامُ عَلَيـكَ أَيُّهـا النَّبِـيُّ وَرَحْمَـةُ اللهِ وَبَرَكـاتُه ، السَّلامُ عَلَيْـنا وَعَلـى عِبـادِ كَ الصَّـالِحـين  أَشْـهَدُ أَنْ لا إِلـهَ إِلاّ الله ، وَأَشْـهَدُ أَنَّ مُحَمّـداً عَبْـدُهُ وَرَسـولُه"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="3dp"
+                    android:text="আত্তাহিয়্যাতু লিল্লা-হি, ওয়াছ ছালা-ওয়াতু, ওয়াত-তাইয়্যিবা তু, আচ্ছালা মু আ&apos;লাইকা, আইয়্যুহান নাবিয়্যু, ওয়ারাহ মাতুল্লাহি ওয়া বারাকাতুহ, আচ্ছালামু আলাইনা, ওয়া আ&apos;লা ইবাদিল্লা হিছ-ছা লিহীন। আশহাদু আল লা-ইলা-হা ইল্লাল্লাহু, ওয়া আশহাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসুলুহু ।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="3dp"
+                    android:text="সমস্ত মৌখিক ইবাদাত,সমস্ত শারীরিক ইবাদাত এবং সমস্ত পবিত্র বিষয় আল্লাহ তা‘আলার জন্য। হে নবী! আপনার উপর শান্তি ও তাহার বরকতসমূহ নাযিল হউক। আমাদের প্রতি ও আল্লাহ তা‘আলার নেক বান্দাদের প্রতি তাঁহার শান্তি বর্ষিত হউক। আমি সাক্ষ্য দিতেছি যে,আল্লাহ তা‘আলা ব্যতীত আর কোন মা‘বুদ নাই। আমি আরো সাক্ষ্য দিতেছি যে, হযরত মুহাম্মদ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম তাঁহার বান্দা ও রাসূল।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

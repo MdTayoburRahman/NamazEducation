@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="সালাম। "
+                    android:textColor="#0A5693"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="প্রথমে  সালাম ডান দিকে ফিরাবেন তারপর বাম দিকে সালাম ফিরিয়ে নামাজ শেষ করবেন।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textIsSelectable="true"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="اَلسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ "
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:text="আসসালামু আলাইকুম ওয়া রাহমাতুল্লা-হ।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="আপনার প্রতি আল্লাহর পক্ষ থেকে শান্তি ও রহমত বর্ষিত হোক।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="মোনাজাত"
+                        android:textColor="@color/white"
+                        android:background="@color/purple_500"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="এক হাদীসে বর্নিত আছে, আল্লাহতায়ালার পক্ষ থেকে একজন ফেরেশতা নির্ধারিত আছেন যখন কোন ব্যাক্তি ৩ বার “ ইয়া আর হামার রাহেমিন ” ( হে সকল দয়াশীলদের চেয়ে বড় দয়াশীল) তখন উক্ত ফেরেশতা ঐ ব্যাক্তিকে বলেন, নিশ্চয়ই সবচেয়ে বড় দয়াশীল তোমার প্রতি মনযোগী আছেন, এখন তুমি যা ইচ্ছা তাই চাও(তোমার দোয়া নিশ্চয়ই কবুল হবে)।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="এরপর আল্লাহতায়ালার গুনবাচক নামগুলো বলা যেতে পারে এবং সেভাবে চাওয়া যেতে পারে আউজুবিল্লাহি আন আকুনা মিনাল জাহেলিন। (আমি আল্লাহতায়ালার নিকট মূর্খের ন্যায় দোয়া করা থেকে আশ্রয় প্রার্থনা করছি।) "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="কেননা অনেক সময় আমরা এমন কিছু চেয়ে ফেলি যা হয়ত আখের আমাদের জন্য ভাল নয়। রাব্বানা জালাম না আন ফুছানা ওয়া ইল্লাম তাগফির লানা ওয়া তার হামনা লা নাকুনান্না মিনাল খসিরিন। (হে আমাদের রব, আমরা আমদের নিজেদের উপর অত্যাচার করেছি। যদি আপনি আমাদেরকে ক্ষমা না করেন এবং আমাদের প্রতি দয়া না করেন তবে অবশ্যই আমরা ক্ষতিগ্রস্তদের দল ভুক্ত হয়ে যাব।)"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="রব্বানা তাকাব্বাল মিন্না ইন্নাকা আন্তাছ সামিয়্যুল আলীম ওয়া তুব আলাইনা ইন্নাকা আন্তাত তাওয়াবুর রহীম। (হে আমাদের প্রতিপালক আমাদের যাবতীয় সতকর্মসমূহ কবুল করুন। অবশ্য আপনি সব কিছু শুনেন ও জানেন এবং আমাদের তওবাকে কবুল করুন। আপনিই এক মাত্র বান্দার তওবা কবুলকারী ও পরম দয়ালু।) "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="লা ইলাহা ইল্লা আন্তা সোবহানাকা ইন্নি কুন্তু মিনাজ জোয়ালিমিন। (কোন মাবুদ নেই আপনি ছাড়া। আপনি পূত ও পবিত্র, অবশ্য আমি আমার আত্নার উপর অত্যাচারকারী।) "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="এস্তেগফার পড়া যেটা আপনার জানা আছে"
+                        android:textColor="@color/white"
+                        android:background="@color/purple_500"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="আল্লাহুম্মা ইন্না নাস আলুকা জান্নাতি ওয়া ইন্না নাউজুবিকা মিনান নার।\n(হে আল্লাহ নিশ্চয়ই আমরা আপনার নিকট জান্নাত চাই এবং দো্যখ থেকে আশ্রয় ভিক্ষা চাই।) "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="এক হাদীসে বর্নিত আছে যে, যখন কোন ব্যাক্তি ৩ বার আল্লাহর নিকট জান্নাত কামনা করে তখন জান্নাত বলে হে আল্লাহ এই ব্যাক্তিকে জান্নাতে দাখিল করে দিন এবং যখন কোন ব্যাক্তি ৩ বার আল্লাহর নিকট জাহান্নাম থেকে নাজাত চায় তখন জাহান্নাম বলে হে আল্লাহ আপনি এই ব্যাক্তিকে জাহান্নাম থেকে নাজাত দান করুন। লা হাওলা ওয়ালা কুয়্যাতা ইল্লা বিল্লাহিল আলিউল আযীম।(কোন লক্ষ্য অর্জনের শক্তি মহান আল্লাহতায়ালার কাছ থেকেই পাওয়া যেতে পারে।) "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="রাব্বানা লা তু ওয়া খিজ না ইন্না ছি না আও আখ ত না রব্বানা ওয়া তাহ মিল আলাইনা ইছ্রান কামা হামাল তা হু আলাল্লাঝী না মিন কাব লিনা রব্বানা ওয়ালা তু হাম্মিল না মা লা ত কা তা লা না বিহী ওয়া ফু আন্না ওয়াগ ফির লানা ওয়ার হাম না আন্তা মাওলানা ফান ছুর না আলাল কাওমিল কাফেরিন। (আয় আল্লাহ ! আমাদের ভুল ত্রুটি ধরবেন না ।আয় আল্লাহ ! আমাদের উপর জারি করবেন না কোন কঠোর আইন পূর্ববর্তী উম্মতগনের ন্যায়। আয় আল্লাহ ! আমাদের শক্তির বাইরে কোন হুকুম জারি করবেন না এবং আমাদের অন্যায় ক্ষমা করে দিন এবং আমাদের ত্রুটি মার্জনা করে দিন। এবং আমাদের প্রতি দয়ার নজর দান করুন ।আপনিই আমাদের একমাত্র মালিক অতএব আমাদের কাফিরদের মোকাবেলায় জয়যুক্ত করুন।) "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="রাব্বানা হাবলানা মিন আজওয়াজিনা অজুররিই ইয়াতিনা কুররাতা আউনিউ ওয়াজআল্‌না লিলমুত্তাকিনা ইমামা।(হে আমাদের প্রভু। আমাদের প্রতিপালক, তুমি আমাদেরকে আমাদের স্ত্রী ও সন্তানদের মাধ্যমে চক্ষুর স্নিগ্ধতা দান কর। আমাদেরকে মুত্তাকীদের ইমাম বানাও) রাব্বানা আ তিনা ফিদ দুনিয়া হাসানাতাও ওয়া ফিল আখিরাতি হাসানাতাও ওয়া কিনা আযাবান নার (হে আল্লাহ আপনি আমাদের দুনিয়াতেও শান্তি দান করুন এবং আখেরাতেও শান্তি দান করুন এবং আমাদের আযাব হতে মুক্তি দিন )। "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:paddingLeft="3dp"
+                        android:text="সুবহানা রাব্বিকা রাব্বিল ইজ্জাতি আ’ম্মা ইয়াসিফুনা।ওয়া সালামুন আ’লাল মুরসালিনা। ওয়ালহামদুলিল্লাহি রাব্বিল আ’লামিনা (পবিত্র আপনার পরওয়ারদেগারের সত্তা, তিনি সম্মানিত ও পবিত্র যা তারা বর্ণনা করে তা থেকে।পয়গম্বরদের প্রতি সালাম র্বষিত হোক।সমস্ত প্রশংসা বিশ্বপালক আল্লাহর নিমিত্ত)। "
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

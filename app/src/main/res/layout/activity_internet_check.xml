@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tools.InternetCheckActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_signal_cellular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ইন্টারনেট সংযোগ নেই !"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="এই অ্যাপ ব্যাবহার এর জন্য ইন্টারনেট সংযোগ প্রয়োজন । অনুগ্রহ করে আপনার ইন্টারনেট সংযোগ চালু করুন। "
+        android:textColor="@color/purple_500"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ইন্টারনেট সংযোগ চালু করুন" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ইন্টারনেট সংযোগ চেক করুন" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

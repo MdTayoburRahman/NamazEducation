@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="দরূদ শরীফ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:text="اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَ عَلَى آلَ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَ عَلَى آلَ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكَ عَلَى مُحَمَّدٍ وَ عَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إئبْرَاهِيمَ وَ عَلَى آلِ إِبْرَاهَيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="5dp"
+                    android:text="আল্লাহুম্মা সল্লেআ‘লা মুহাম্মাদিও ও‘য়ালা আলি মুহাম্মদ কামা সল্লেইতা‘আলা ইবরাহিমা ওয়া‘লা আলি ইবরাহিমা ইন্নাকা হামিদুম্মাজিদ। আল্লাহুম্মা বারিকআ‘লা মুহাম্মাদিও ও‘য়ালা আলি মুহাম্মদ কামা বারাকতা‘আলা ইবরাহিমা ওয়া‘লা আলি ইবরাহিমা ইন্নাকা হামিদুম্মাজিদ।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="7dp"
+                    android:text="হে আল্লাহ! তুমি রহমত বর্ষণ কর মুহাম্মদ(সা.)-এর প্রতি ও তাঁহার পরিবার পরিজনের প্রতি, যেমন রহমত বর্ষণ করিয়াছ ইবরাহীম(আ.)-এর প্রতি ও তাঁহার পরিবার পরিজনের প্রতি। নিশ্চয়ই তুমি প্রশংসিত ও সন্মানিত। হে আল্লাহ! তুমি বরকত নাযিল কর মুহাম্মদ(সা.)-এর প্রতি ও তাঁহার পরিবার পরিজনের প্রতি, যেমন বরকত নাযিল করিয়াছ ইবরাহীম(আ.)-এর প্রতি ও তাঁহার পরিবার পরিজনের প্রতি। নিশ্চয়ই তুমি প্রশংসিত ও সন্মানিত।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

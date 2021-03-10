@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".RakatTableActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:menu="@menu/top_app_bar"
+        app:title="নামাজের রাকাআত সংখ্যা ও নিয়ম"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="293dp"
+        android:padding="5sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_rakat_table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <LinearLayout
+        style="@style/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_margin="5sp"
+        android:padding="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:text="গুরুত্বপূর্ণ তথ্য"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:padding="3dp"
+                android:text="নতুন নামাজীকে পুরানো নামাজের কাযা পড়তে হবে না: অনেকেই নামাজ পড়া শুরু করে না এই ভয়ে যে সারাজীবনে যা নামাজ ক্বাযা হয়ে গেছে তার কাযা পড়তে হবে। হাদিস থেকে এরকম কোন বিধান পাওয়া যায় না। আপনি যদি আগে বেনামাজী হয়ে থাকেন আপনাকে আগের নামাজ কাযা পড়তে হবে না, কিন্তু আল্লাহ্‌র কাছে আন্তরিকতার সাথে তাওবাহ্‌ করতে হবে। তবে নিয়মিত নামাজী হওয়ার পর, কোন অপরাগতার কারণে যদি ২/১ বার কখনো নামাজ ক্বাযা করে ফেলেন তখন সেটার ক্বাযা নামাজ পড়তে হবে ।
+\n\n রাসূলুল্লাহ(সা) বলেন: যে ব্যক্তি দিনে-রাতে ১২ রাক’আত (ফরজ বাদে অতিরিক্ত) নামাজ পড়বে তার জন্য জান্নাতে একটি বাড়ি তৈরী করা হবে। এই ১২ রাক’আত হলো: যোহর নামাজের আগে ৪, পরে ২ রাক’আত, মাগরিবের নামাজের পরে ২ রাক’আত, ইশা এর নামাজের পরে ২ রাক’আত এবং ফজরের নামাজের আগে ২ রাক’আত। – (তিরমিযী ৩৮০, সহীহ আল জামি’ ৬৩৬২, হাদিসটি সহীহ)"
+                android:textColor="@color/purple_500"
+                android:textSize="16dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

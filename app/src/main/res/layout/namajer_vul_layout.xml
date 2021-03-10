@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_app_bar"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:text="নামাজে ভূল হলে করনীয় সমূহ"
+                    android:textColor="@color/white"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="নামাজে যদি কোনও ওয়াজিব তরক হয়ে যায় তাহলে আপনাকে অবশ্যই সাহু সিজদা দিতে হবে। তা না হলে আপনার নামাজ হবে না। সাহু সিজদার এ মাসালাগুলো ছেলে-মেয়ে উভয়ের ক্ষেত্রেই প্রযোজ্য।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:text="সিজদা সাহু করার সঠিক নিয়ম হচ্ছে - “সালাতে কম বেশি যাই হোক, আত্তাহিয়্যাতু, দরুদ, দুয়া মাসুরা পড়ে তাকবীর দিয়ে পর পর দুটি সিজদাহ দিয়ে সালাম ফিরিয়ে সালাত শেষ করতে হবে।”বুখারি ও মুসলিম, মিশকাত সালাত অধ্যায় সাহো অনুচ্ছেদ, ১১৮ নাম্বার হাদিস। অথবা, “সালাতে কম বেশি যাই হোক, সালামের ফেরানোর আগে বা পরে দুইটি (অতিরিক্ত) সাহু সিজদা দিতে হবে।”সহীহ মুসলিম, নাওয়াতুল আওতার ৩/৪১১।\n\n
+অর্থাৎ দুইটাই জায়েজ, সালামের আগে বা পরে দুইটা অতিরিক্ত সিজদা দেওয়া।
+সালাম ফেরানোর আগে সিজদা সাহু যেভাবে করবেন: সিজদা সাহু দেওয়া ওয়াজিব হয় এমন কোন ভুল করলে, শেষ বৈঠকে আত্তাহিয়্যাতু, দরুদ, দুয়া মাসুরা পরে ডানে ও বামে দুইদিকে সালাম ফেরাবেন। এরপরে আল্লাহু আকবার বলে দুইটি সিজদা সাহু দেবেন। দুই সিজদার মাঝখানে বা সিজদাতে তাসবিহর পরে দুয়া করতে পারবেন। ২টা অতিরিক্ত সিজদা দিয়ে আর কিছু পড়তে হবেনা, আবার ডানে ও বামে দুইদিকেই সালাম ফিরিয়ে নামায শেষ করবেন।
+
+তবে নামাজে যদি কোনো ফরজ তরক হয়ে যায় তাইলে আবার নতুন করে নামাজ পড়তে হবে। তিনটি কারণে নামাযে সাহু সিজদা দিতে হয়
+১) নামায বৃদ্ধি হওয়া। যেমন, কোন রুকু, সিজদা বা বসা ইত্যাদি বৃদ্ধি হওয়া।
+২) কোন রুকন বা ওয়াজিব কম হওয়া।
+৩) সন্দেহ হওয়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="নামায বৃদ্ধি হওয়া"
+                    android:textColor="@color/white"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="3dp"
+                    android:text="মুছল্লী যদি নামাযের অন্তর্ভুক্ত এমন কিছু কাজ ইচ্ছাকৃতভাবে বৃদ্ধি করে যেমনঃ দাঁড়ানো, বসা, রুকূ‘, সিজদা ইত্যাদি- যেমন দু‘বার করে রুকূ করা, তিন বার সিজদা করা, অথবা যোহর পাঁচ রাকাত আদায় করা। তবে তার ছালাত বাতিল বা ভঙ্গ হয়ে যাবে। কেননা সে আল্লাহ ও তাঁর রাসূলের নির্দেশের বিপরীত আমল করেছে। নবী (ছাল্লাল্লাহু আলাইহি ওয়া সাল্লাম) বলেন, مَنْ عَمِلَ عَمَلًا لَيْسَ عَلَيْهِ أَمْرُنَا فَهُوَ رَدٌّ  “যে ব্যক্তি এমন আমল করবে, যার পক্ষে আমাদের নির্দেশনা নেই, তবে উহা প্রত্যাখ্যাত।”\n\n
+কিন্তু যদি ভুলবশতঃ তা করে এবং ঐভাবেই ছালাত শেষ করে দেয়ার পর স্মরণ হয় যে, ছালাতে বৃদ্ধি হয়ে গেছে, তবে শুধুমাত্র সাহু সিজদা করবে। তার ছালাতও বিশুদ্ধ হয়ে যাবে। কিন্তু ছালাতরত অবস্থায় যদি উক্ত বৃদ্ধি স্মরণ হয়- যেমন চার রাকাআত শেষ করে পাঁচ রাকাআতের জন্য দাঁড়িয়ে গেছে- তবে সে ফিরে আসবে এবং শেষে সিজদায়ে সাহু করবে।
+উদাহরণ: জনৈক ব্যক্তি যোহরের ছালাত পাঁচ রাকাআত আদায় করে নিয়েছে। কিন্তু শেষ তাশাহুদে বসার সময় এবৃদ্ধির কথা তার স্মরণ হল, তাহলে সে তাশাহুদ পূর্ণ করবে এবং সালাম ফেরাবে। তারপর সাহু সিজদা করবে এবং সালাম ফিরাবে। আর যদি সালাম ফেরানোর পর তা স্মরণ হয়, তবে সাহু সিজদা করবে এবং সালাম ফিরাবে।
+আর যদি পঞ্চম রাকাআত চলা অবস্থায় স্মরণ হয় তবে তখনই বসে পড়বে এবং তাশাহুদ পড়ে সালাম ফেরাবে। তারপর সিজদায়ে সাহু করে আবার সালাম ফেরাবে।
+\n\n দলীল:
+عَنْ عَبْدِ اللَّهِ قَالَ صَلَّى النَّبِيُّ صَلَّى اللَّه عَلَيْهِ وَسَلَّمَ الظُّهْرَ خَمْسًا فَقَالُوا أَزِيدَ فِي الصَّلَاةِ؟ قَالَ: وَمَا ذَاكَ؟ قَالُوا: صَلَّيْتَ خَمْسًا، فسجد سجدتين بعد ما سلم. وفي رواية: فَثَنَى رِجْلَيْهِ وَسَجَدَ سَجْدَتَيْنِ ثم سلم
+আবদুল্লাহ্‌ বিন মাসঊদ (রা:) কর্তৃক বর্ণিত। তিনি বলেন, একদা নবী (ছাল্লাল্লাহু আলাইহি ওয়া সাল্লাম) যোহরের নামায পাঁচ রাক্‌আত পড়লেন। তাঁকে প্রশ্ন করা হল, নামায কি বৃদ্ধি করা হয়েছে? তিনি বললেন, কিভাবে? তাঁরা বললেন, আপনি আজ পাঁচ রাকাআত পড়েছেন। তখন তিনি দু‘টি সিজদা করলেন। অন্য রেওয়ায়াতে এসেছে, তখন তিনি পা গুটিয়ে ক্বিবলামুখি হলেন, দু‘টি সিজদা করলেন অত:পর সালাম ফেরালেন।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="সালাত পূর্ণ হওয়ার আগেই সালাম ফেরানো"
+                    android:textColor="@color/white"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="3dp"
+                    android:text="নামায পূর্ণ হওয়ার আগেই সালাম ফেরানো নামায বৃদ্ধি করার অন্তর্গত। যদি অনেক পরে এ ভুলের কথা মনে পড়ে তবে নামায পুনরায় ফিরিয়ে পড়বে। আর যদি একটু পরেই (যেমন দু/এক মিনিট) মনে পড়ে, তবে সে অবশিষ্ট নামায পূর্ণ করবে এবং সাহু সিজদা করে সালাম ফিরাবে।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="নামাযে রুকন বা ওয়াজিব কম হওয়া।"
+                    android:textColor="@color/white"
+
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="3dp"
+                    android:text="@string/namajer_rukun_kom_howa"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

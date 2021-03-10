@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:text="রুকু এবং সেজদার তাসবীহ। "
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="রুকু"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text=" সূরা ক্বিরাতের পর আল্লাহু-আকবার বলে রুকুতে যাবে এবং নিম্নোক্ত রুকুর দোয়াটি পাঠ করবেঃ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="سُـبْحَانَ رَبِّـَى الْعَظيِمِ "
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:text="সুবহানা রাব্বিয়াল আযিম। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="আমি আমার মহান প্রতিপালকের পবিত্রতা বর্ণনা করিতেছি।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="বিঃদ্রঃ- দো&apos;আটি তিনবার বা তার অধিক -পাঁচবার বা সাতবার পড়া ভাল।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:text="রুকু হতে উঠার তাসমী"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="আরবি-উচ্চারন"
+                        android:textColor="@color/purple_500"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:text="سَمِـعَ اللهُ لِمَـنْ حَمِـدَه"
+                        android:textColor="#3c5669"
+                        android:textSize="19dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="সামি আল্লাহু লিমান হামিদাহ।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা অর্থ"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:padding="3dp"
+                        android:text="যে আল্লাহর প্রশংসা করিয়াছে,আল্লাহ তাহার প্রশংসা কবুল করিয়াছেন।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="রুকু হতে দাড়িয়ে পড়ার তাহমীদ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="আরবি-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:text="رَبَّنـا وَلَكَ الحَمْـدُ"
+                        android:textColor="#3c5669"
+                        android:textSize="19dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="রাব্বানা লাকাল্ হামদ্।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা অর্থ"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="সকল প্রশংসা আল্লাহ’র জন্য।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="সেজদার তাসবীহ। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="আল্লাহু-আকবার বলে সিজদায় যাবে। এবং নিচের এই দোয়াটি তিনবার বা তার অধিক (পাঁচবার বা সাতবার)পাঠ করবে।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="আরবি-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:text="سُبْـحانَ رَبِّـيَ الأَعْلـى"
+                        android:textColor="#3c5669"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="সুবহানা রাব্বিয়াল আ‘লা।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা অর্থ"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="3dp"
+                        android:text="আমার মহান প্রতিপালকের পবিত্রতা বর্ণনা করিতেছি।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="আল্লাহু-আকবার বলে সিজদা থেকে সোজা হয়ে বসবে এবং দুই সিজদার মাঝখানে এই নিচের দোয়াটি পড়বেঃ"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="আরবি-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="اَللَّهُمَ اغْفِرْلِيْ، وَارْحَمْنِيْ؛ وَاهْدِنِيْ؛ وَارْزُقْنِيْ؛ وَعَافِنِيْ ؛وَاجْبُرْنِيْ"
+                        android:textColor="#3c5669"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="আল্লাহু-ম্মাগ ফিরলী,ওয়ার হামনি,ওয়াহদিনী,ওয়ারযোকনী,ওয়া &apos;আ-ফিনী,ওয়াজবুরনী।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা অর্থ"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="3dp"
+                        android:text="হে আল্লাহ্!আমাকে ক্ষমা কর,আমাকে রহম কর,আমাকে হেদায়াত দান কর,আমাকে রিযিক দান কর,আমাকে সুস্থ্যতা দান কর এবং আমার ক্ষয়ক্ষতি পূরণ কর।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="অথবা"
+                        android:textColor="@color/purple_500"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="আরবি-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="رَبِّ اغْفِرْلِيْ؛ رَبِّ اغْفِرْلِيْ؛ رَبِّ اغْفِرْلِيْ"
+                        android:textColor="#3c5669"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা-উচ্চারন"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="রব্বি-গ্ফিরলী,রব্বি-গ্ফিরলী,রব্বি-গ্ফিরলী।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/purple_500"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:text="বাংলা অর্থ"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="3dp"
+                        android:text="হে আল্লাহ্!আমাকে ক্ষমা কর,হে আল্লাহ্!আমাকে ক্ষমা কর,হে আল্লাহ্!আমাকে ক্ষমা কর।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="3dp"
+                        android:text="অতঃপর পুনরায় আল্লাহু-আকবার বলে দ্বিতীয় সিজদা দিবে এবং প্রথম সিজদার অনুরূপ পড়বে।"
+                        android:textColor="@color/purple_500"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

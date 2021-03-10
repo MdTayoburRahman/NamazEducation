@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="কাযা নামাজ এবং ওয়াক্তিয়া নামাজের নিয়ত একই রকম তবে এইটুক পার্থক্য যে কাযা নামাজে (আন উসালি্লয়া) শব্দের জায়গায় (আন আকদিয়া) এবং যে নামাজ তাহার নাম বলিয়া (আল ফাইতাতে বলিতে হইবে। "
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text=" যথা- ফরজ অথবা আছরের  নামা্জ কাযা হইলে নিম্নরূপ নিয়ত পড়তে হবে"
+                    android:textColor="#0F9D58"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="ফজর নামাজের কাযার-দুই-রাক&apos;আত  ফরজ  এর নিয়ত "
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="نَوَايْتُ اَنْ اَقْضِ لِلَّّهِ تَعَالَى رَكْعَتَىْ صَلَوةِ الْفَجْرِالْفَائِتَةِ فَرْضُ اللَّهِ تَعَالَى مُتَوَجِّهًا اِلَى جِهَةِ الْكَعْبَةِ الشَّرِيْفَةِ اَللَّهُ اَكْبَرُ"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="নাওয়াইতুয়ান আকদিয়া লিল্লাহি ত’আলা রাকাআতি ছালাতিল  ফাজরি ফায়েতাতি ফারযুল্লাহি তা’আলা মোতাওয়াজ্জিহান ইলা জিহাতিল কাবাতিশ শারীফাতি আল্লাহু আকবার।"
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="3dp"
+                    android:text="আমি কিবলামুখী হয়ে আল্লাহর উদ্দেশ্যে ফজরের ফরজ দুই রাকাত কাযা নামাজ আদায় করছি। আল্লাহু আকবার।"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আছর নামাজের কাযার-চার-রাক&apos;আত  ফরজ এর নিয়ত "
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="نَوَيْتُ اَنْ اَقْضِىَ لِلَّهِ تَعَا لَى اَرْبَعَ رَكْعَاتِ صَلَوةِ الْعَصْرِ الْفَا ئِتَةِ فَرْضُاللَّهِ تَعَا لَى مُتَوَجِّهًا اِلَى جِهَةِ الْكَعْبَةِالشَّرِيْفَةِ اَللَّهُ اَكْبَرُ"
+                    android:textColor="#3c5669"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="নাওয়াইতুয়ান আকদিয়া লিল্লাহি ত’আলা আরবায়া রাকাআতি ছালাতিল আছরিল ফায়েতাতি ফারযুল্লাহি তা’আলা মোতাওয়াজ্জিহান ইলা জিহাতিল কাবাতিশ শারীফাতি আল্লাহু আকবার।"
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="3dp"
+                    android:text=" আমি কিবলামুখী হয়ে আল্লাহর উদ্দেশ্যে আছরের ফরজ চার রাকাত কাযা নামাজ আদায় করছি। আল্লাহু আকবার।"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="কাযা নামাজ এর নিয়ম"
+                    android:textColor="@color/white"
+                    android:background="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="যে কোন জরুরী কারণে সময়মত নামাজ পড়তে না পারিলে ঐ নামাজ অন্য নামাযের পূর্বে আদায় করাকে কাযা নামাজ বলে। "
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text=" কাযা নামাজ দুই প্রকার যথা-"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:text="১। ‘ফাওয়ায়েতে কালীল’ অর্থাৎ অল্প কাযা পাঁচ ওয়াক্ত পরিমাণ নামাজ কাযা হইলে উহাকেই ‘ফাওয়ায়েতে কালীল’ বা অল্প কাজা বলে।"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="২। ‘ফাওয়ায়েতে কাছির’ অর্থাৎ বেশি কাযা। পাঁচ ওয়াক্তের অধিক যত দিনের নামাজই কাযা হউক না কেন উহাকে ‘ফাওয়ায়েতে কাছির’ বা অধিক কাযা বলা হয়। এ ধরনের কাযা নামাজ সকল ওয়াক্তিয়া নামাযজর পূর্বে পড়িবে ।  কিন্তু,  (ক) কাযার কথা ভুলিয়া গেলে অথবা  খ) ওয়াক্তিয়া নামাযজর ওয়াকত সস্কীর্ণ হইয়া গেলে বা  গ) কাযা পাঁচ ওয়াক্তের বেশী হইলে কাযা নামাজ পরে পড়া যাইতে পারে।"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="পাঁচ ওয়াক্ত নামাজ বা তার কম নামাজ না পড়িয়া থাকিলে তাহার তরতীবের প্রতি লক্ষ্য রাখিতে হইবে। আগের নামাজ আগে, পরের নামাজ পরে পড়িতে হইবে। যথঃ কোন ব্যক্তির ফরজ এবং যোহরের নামাজ তরক হইয়া গিযাছে; এখন আছরের নামাজ পড়িবার পূর্বে সর্ব প্রথম ফজরের কাযা তারপর যোহরের কাযা আদায় করিতে হইবে। তারপর আছরের ওয়াক্তিযা নামাজ আদায় করিবে।"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:text="১) ফরয নামাজের কাযা ফরয।"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="3dp"
+                    android:text="২) ওয়াজিব নামাজের কাযা ওয়াজিব।"
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="৩) সুন্নত নামাযের কাযা পড়িতে হয় না। কিন্তু ফজরের সুন্নতের কাযা আদায় করিতে হইব।"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="৪) কাযা নামাজ জামায়াতের সহিত আদায় করিলে ইমাম কেরাত জোরে পড়িবেন। তবে যোহর এবং আছরে চুপে চুপে পড়িবেন।"
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="৫) এক মাস বা তার চেয়ে বেশী দিনের নামাজ কাযা হইয়া থাকিলে উক্ত পরিমাণ সময়ের কাযা আদায় করিবে এবং তরতীবের প্রতি লক্ষ্য রাখিবে।"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="৬) জীবনে যে নামাজ পড়ে নাই বা কত নামাজ তরক করিয়াছে তাহার হিসাবও নাই। সে যদি এখন কাযা করিতে চায়, তবে প্রথমে নামাজের পূর্বে তরতীব অনুযায়ী কাযা আদায় করিতে থাকিব, ইহাকে ‘ওমরী কাযা’ বলে। ইহাতে অশেষ ছওয়াব আছে। কাযা নামাজের নিয়ত করিবার সময় নামাজের উল্লেখ করিয়া নিয়ত করিতে হইবে।"
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

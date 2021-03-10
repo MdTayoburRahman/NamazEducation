@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="droidrocks.com.namaztimeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <application
+        android:name=".Tools.AppController"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NamazTimeApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Azan.ExoPlayerActivity" />
+        <activity android:name=".Azan.AzanActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kalima.KalimaActivity" />
+        <activity android:name=".Allah99Name.AllahMainActivity" />
+        <activity android:name=".Allah99Name.AllahAr99NamAndFojilotMainActivity" />
+        <activity android:name=".TasbihActivity" />
+        <activity android:name=".ImportentSurah.ImportantSuraActivity" />
+        <activity android:name=".NamazShikkha.ContentViewActivity" />
+        <activity android:name=".NamazShikkha.NamazPoddotiMainActivity" />
+        <activity android:name=".NamazShikkha.NamazerNiyotActivity" />
+        <activity android:name=".NamazShikkha.NamzerPrathomikBisoyActivity" />
+        <activity android:name=".NamazShikkha.NamazerDowaMainActivity" />
+        <activity android:name=".NamazShikkha.NanazShikkahActivity" />
+        <activity android:name=".Tools.InternetCheckActivity" />
+        <activity android:name=".RakatTableActivity" />
+        <activity android:name=".OjurNiyomActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".kibla.CompassActivity" />
+        <activity android:name=".ImportentSurah.SuraContentView" />
+        <activity android:name=".kalima.KalimaContentView" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

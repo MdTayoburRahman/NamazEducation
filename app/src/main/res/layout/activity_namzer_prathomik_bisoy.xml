@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".NamazShikkha.NamzerPrathomikBisoyActivity">
+   
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:title="নামাজের প্রাথমিক বিষয়"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="নামাজ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="5dp"
+                    android:text="নামাজ বা সালাত হল ইসলাম ধর্মের প্রধান উপাসনাকর্ম।\n(নির্দিষ্ট নামাজের নির্দিষ্ট সময়)নামাজ আদায় করা প্রত্যেক মুসলমানের জন্য আবশ্যক বা ফরজ।\nনামাজ ইসলামের পঞ্চস্তম্ভের একটি। শাহাদাহ্‌ বা বিশ্বাসের পর নামাযই ইসলামের সবচেয়ে গুরুত্বপূর্ণ স্তম্ভ।\nনামায শব্দটি ফার্সি ভাষা থেকে উদ্ভূত (ফার্সি: نماز) \nএবং বাংলা ভাষায় পরিগৃহীত একটি শব্দ যা আরবি ভাষার সালাত শব্দের (আরবি: صلاة‎, কুরআনিক আরবি: صلوة,) প্রতিশব্দ। \nবাংলা ভাষায় &apos;সালাত&apos;-এর পরিবর্তে সচরাচর &apos;নামাজ&apos; শব্দটিই ব্যবহৃত হয়। ফার্সি, উর্দু, হিন্দি, তুর্কী এবং বাংলা ভাষায় একে নামাজ (ফার্সি ভাষা থেকে উদ্ভূত) বলা হয়। কিন্তু এর মূল আরবি নাম সালাত (একবচন) বা সালাহ্‌ (বহুবচন)।  সালাত -এর আভিধানিক অর্থ দোয়া, রহমত, ক্ষমা প্রার্থনা করা ইত্যাদি। পারিভাষিক অর্থ:‘শরী-আত নির্দেশিত ক্রিয়া-পদ্ধতির মাধ্যমে আল্লাহর নিকটে বান্দার ক্ষমা ভিক্ষা ও প্রার্থনা নিবেদনের শ্রেষ্ঠতম ইবাদতকে ‘সালাত’ বলা হয়, যা তাকবীরে তাহরীমা দ্বারা শুরু হয় ও সালাম দ্বারা শেষ হয়’।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="পাঁচ ওয়াক্তের নামাজের নাম সমূহঃ"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="25dp"
+                    android:text="১.ফযর (فجر)"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="25dp"
+                    android:text="২.যোহর (ظهر)"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="25dp"
+                    android:text="৩.আসর (عصر)"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="25dp"
+                    android:text="৪.মাগরিব (مغرب)"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="25dp"
+                    android:text="৫.ঈশা (عشاء) "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="নামাজ ফরজ হওয়ার শর্তসমূহ -"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:text="১.মুসলমান হওয়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:text="২.বয়স কমপক্ষে ৭ বৎসর হওয়া এবং"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:text="৩.সুস্থ মস্তিস্কের হওয়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="নামাজের আহকাম সমূহ -"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১. শরীর পাক হওয়া : প্রয়োজন-মতো অজু-গোসল বা তায়ামুমের মাধ্যমে শরীর পাক পবিত্র করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="২.কাপড় পাক হওয়া, অর্থাৎ কাপড় পরিষ্কার-পরিচ্ছন্ন হওয়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৩.জায়গা পাক হওয়া (নামাজ পড়ার স্থান পাক হওয়া)।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৪. সতর ঢাকা (পুরুষের নাভীর উপর থেকে হাঁটু পর্যন্ত ঢেকে রাখা এবং মহিলাদের মুখমণ্ডল হাতের কব্জি এবং পায়ের পাতা ছাড়া সমস্ত শরীর ঢেকে রাখা)।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৫. কিবলামুখী হওয়া (কাবার দিকে মুখ করে সালাত আদায় করা)।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৬. ওয়াক্ত হওয়া (সালাতের নির্ধারিত সময় হওয়া)"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৭.নিয়ত করা (যে ওয়াক্তের সালাত আদায় করবে মনে মনে তার নিয়ত করা)।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="নামাজের আরকান সমূহ -"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১.তাকবিরে তাহরিমা বা আল্লাহু আকবার বলে নামাজ শুরু করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="২.কেরাম বা দাঁড়িয়ে সালাত পড়া। নারী-পুরুষ উভয়কে দাঁড়িয়ে সালাত পড়ত হবে। তবে অসুস্থ হলে বসে এবং বলতে অক্ষম হলে শুয়ে ইশারায় সালাত পড়তে হবে।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৩.কোরআন শরিফের কিছু অংশ পাঠ করা। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৪.রুকু করা"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৫.সিজদা করা "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৬. শেষ বৈঠকে বসা (যে বৈঠকে তাশাহুদ, দরুদ, দোয়া মাছুরা পড়ে সালামের মাধ্যমে সালাত শেষ করা হয় তাকেই বলে শেষ বৈঠক) ডানে ও বামে সালাম ফিরিয়ে সালাত শেষ করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="নামাজের ওয়াজিব সমূহ -"
+                    android:textColor="#3c5669"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১.সুরা ফাতেহা পুরা পড়া"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="২.সুরা ফাতেহার সাথে সুরা মিলানো।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৩.রুকু-সিজদায় দেরি করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৪.রুকু হতে সোজা হয়ে দাঁড়ানো"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৫.দুই সিজদার মাঝখানে সোজা হয়ে বসা"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৬.দরমিয়ানি বৈঠক অর্থাৎ দুইয়ের অধিক রাকাত নামাজের ক্ষেত্রে দুই রাকাত পরে আত্তাহিয়াতু’র জন্য বসা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৭.উভয় বৈঠকে আত্তাহিয়াতু পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৮.ঈমামের জন্য কিরআত আস্তে’র জায়গায় আস্তে এবং জোরে’র জায়গায় জোড়ে পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৯.বিতর নামাজে দোআ -কুনুত পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১০.দুই ঈদ’র নামাজে অতিরিক্ত ৬ তাকবীর বলা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১১.ফরজ নামাজের প্রথম দুই রাকাতকে কিরাতের জন্য নির্দিষ্ট করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১২.প্রত্যেক রাকাতের ফরয এবং ওয়াজিব’র তরতিব ঠিক রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১৩.ইমাম’র অনুসরণ করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১৪.সালাম ফেরানো"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="5dp"
+                    android:text="এখানে উল্লেখ্য যে আমরা রুকুতে দাঁড়ানো এবং দুই সিজদার মাঝখানে বসার ক্ষেত্রে তাড়াতাড়ি করি।রুকু হতে দারানর সময় পুরা সোজা হয়ে দারাতে হবে এবং দুই সিজদার মাঝখানে একেবারে সোজা হয়ে বসতে হবে। উভয় ক্ষেত্রেই একবার তাসবিহ অর্থাৎ “সুবহানআল্লাহ”পড়ার সময় পর্যন্ত অপেক্ষা করা উত্তম।এশা’র নামাজের পর বিতর নামাজে দোআ কুনুত পড়ার ব্যাপারটি অত্যন্ত জরুরি। যে দোআ -কুনুত পরতে পারেনা সে মুখস্থ করবে।আর মুখস্থ করার সময় পর্যন্ত সে “রাব্বানা আতিনা ফিদদুনিয়া হাসানাত্নাউ ওয়াফিল আখিরাতে হাসানাত্নাউ অয়াকিনা আজাবান্নার”একবার এবং তিনবার “আল্লাহহুম্মাগফিরলি”পরবে।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:text="নামাজের সুন্নত সমূহ-যথা "
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১.তাকবীর বলে দুই হাত কানের লতি পর্যন্ত উঠান। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="২.হাতের আঙ্গুল পরস্পর পৃথক রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৩.ইমামের জন্য নামায আরম্ভের তাকবীর উচ্চঃস্বরে পড়া। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৪.ছানা পাঠ করা। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৫.“আউযুবিল্লাহ্”পাঠ করা। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৬.“বিছমিল্লাহ্”পাঠ করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৭.সূরা ফাতিহা পাঠ করার পর ঈমাম ও মুস্তাদিগণের মৃদুস্বরে “আমীন”বলা। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৮.পুরুষের জন্য নাভীর নীচে তাহরিমা বাঁধা আর স্ত্রী লোকের জন্য ছিনার উপরে তাহরিমা বাঁধা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="৯.রুকুর তাকবীর বলা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১০.রুকুতে দুই হাঁটু ধরা ও আঙ্গুল সমুহ পরস্পর পৃথক রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১১.রুকুর ভিতরে তিন,পাঁচ বা সাতবার তাছবীহ্ বলা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১২.রুকু থেকে সোজা হয়ে দাঁড়ান।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৩.রুকু হতে উঠার সময়ে ইমামের “ছামিয়াল্লাহ হুলিমান হামীদা”ও মোক্তাদিগণের “রাব্বানা লাকাল হামদ”বলা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১৪.ছেজদায় গিয়ে দুই হাঁটু ও তাকবীর বলে বসা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১৫.ছেজদায় তাছবীহ্ পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৬.পুরুষের জন্য ছেজদাহ হতে উঠে ডান পা খাড়া রেখে বাম পায়ের উপর বসা, আর স্ত্রীলোকের উভয় পা ডান দিকে বাহির করে ছতরের উপর বসা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৭.ছেজদা থেকে উঠার পর এক তছবীহ্ পরিমাণ সময় বসে থাকা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১৮.দরুদ শরীফ পাঠ করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="১৯.দোয়ায়ে মাছুরা পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="২০.দুই দিকে ছালাম ফিরান।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:text="নামাজের মুস্তাহাব সমূহ-যথাঃ "
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১.এক্বামতের সময়ে “হাইয়্যালাল ফালাহ্”বলা-মাত্র নামাজে ঠিক ভাবে দাঁড়ানো। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="২.তাকবীরে তাহরীমা বলার সময়ে আন্তিন হতে হাতের তালু বাহির করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৩.দাঁড়াবার সময়ে সিজদার জায়গার প্রতি দৃষ্টি রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৪.রুকুতে পায়ের পাতার দিকে দৃষ্টি রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৫.বৈঠকে কোলের দিকে দৃষ্টি রাখা। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৬.সাধ্যানুযায়ী হাসি ও কাশি বন্ধ রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৭.রুকুতে মাথা ও পৃষ্ঠ ভাগ সমান উঁচু রাখা। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৮.সিজদায় প্রথমে দুই হাঁটু ,তারপর দুই হাত জমিনে রাখা,পরে নাক ও তারপরে কপাল জমিনে রাখা এবং সেজদা হতে উঠার সময়ে যথাক্রমে প্রথমে কপাল,পরে নাক উঠিয়ে তৎপর দুই হাত হাঁটুর উপরে রেখে বসা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="৯.সিজদায় দুই হাতের মধ্যে মাথা রাখা,নাক দুই বৃদ্ধাংগুলির মধ্যে বরাবর রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১০.হাত-পায়ের আঙ্গুলিসমূহ কেবলা মুখ করে রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১১.ছালাম ফিরানোর সময় দুই সিনার প্রতি দৃষ্টি রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১২.সেজদায় পুরুষের দুই হাত পৃথক ভাবে রাখা এইভাবে উঁচুতে রাখতে হবে যেন বকরীর বাচ্চা যাতায়াত করতে পারে । কিন্তু স্ত্রীলোকের জন্য সেজদায় এর বিপরীত করতে হবে । যেমন দুই হাত চাপিয়ে রাখা এবং রানের উপর পেট রাখা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৩.তিন বারের অধিক-বেজোড় তছবীহ্ পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৪.ফযরের নামাযে (سورة الحجراة – سورة البلد )এর মধ্যে যে কোন ২টি সুরা পড়া।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৫.আছরের নামাজে ( سورة الشمس – سورة البينة)এর মধ্যে যে কোন ২টি সুরা পড়া। "
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৬.মাগরিবের নামাজে ছোট ছোট সূরাহ (سورة الزلزال - سورة الناس)পাঠ করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:text="১৭.এশার নামাজে (سورة الحجراة – سورة البلد )এর মধ্যে যে কোন ২টি সুরা পাঠ করা।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

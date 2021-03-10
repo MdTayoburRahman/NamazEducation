@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আসর নামাজ ৮ রাকাত"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="১.চার-রাকাত  সুন্নত।"
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="২.চার-রাকাত  ফরজ।"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আসরের চার-রাকাত সুন্নত নামাজের "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text=" নিয়ত সমূহঃ"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="نَوَيْتُ اَنْ اُصَلِّىَ لِلَّهِ تَعَا لَى اَرْبَعَ رَكْعَتِ صَلَوةِ الْعَصْرِسُنَّةُ رَسُوْلِ للَّهِ تَعَا لَى مُتَوَجِّهًا اِلَى جِهَةِ الْكَعْبَةِ الشَّرِ يْفَةِ اَللَّهُ اَكْبَرُ"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text="নাওয়াইতুয়ান উসালিয়া-লিল্লাহি  তা’আলা আরবায়া রাকাআতি ছালাতিল আসরি সুন্নাতু রাসূলিল্লাহি তা’য়াল মোতাওয়াজ্জিহান ইলা জিহাতিল কাবাতিশ শারিফাতি আকবর। "
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="3dp"
+                    android:text="  আসরের চার রাকাত সুন্নত নামাজ আদায় করার উদ্দেশ্যে কিবলামুখী হয়ে নিয়্যত করলাম,আল্লাহু আকবার।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আসরের চার-রাকাত ফরজ  নামাজের "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text=" নিয়ত সমূহঃ"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আরবি-উচ্চারন"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="نَوَيْتُ اَنْ اُصَلِّىَ لِلَّهِ تَعَا لَى اَرْبَعَ رَكْعَتِ صَلَوةِ الْعَصْرِ فَرْضُ اللَّهِ تَعَا لَى مُتَوَجِّهًا اِلَى جِهَةِ الْكَعْبَةِ الشَّرِ يْفَةِ اَللَّهُ اَكْبَرُ"
+                    android:textColor="#3c5669"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা-উচ্চারন"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="3dp"
+                    android:text=" নাওয়াইতুয়ান উসালিয়া-লিল্লাহি তা’আলা আরবায়া রাকাআতি ছালাতিল আসরি ফারদুল্লাহি তা’য়াল মোতাওয়াজ্জিহান ইলা জিহাতিল কাবাতিশ শারিফাতি আকবর। "
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="3dp"
+                    android:text="বিঃদ্রঃ- ঈমামের পিছনে পড়লে ফারদীল্লা-হি তাআ&apos;লা বলার পরে ইকতাদাইতু বিহা-যাল ইমাম বলবে।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="বাংলা অর্থ"
+                    android:textColor="@color/purple_500"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="3dp"
+                    android:text="আসরের চার রাকাত ফরজ নামাজ আদায় করার উদ্দেশ্যে কিবলামুখী হয়ে নিয়্যত করলাম,আল্লাহু আকবার।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আসর নামাজের তাসবিহ"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:padding="5dp"
+                    android:text="উচ্চারণঃ হুয়ার রাহমা-নুর রাহীম। "
+                    android:textColor="#0F9D58"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:padding="5dp"
+                    android:text="অর্থঃ তিনি কৃপাময় ও করুনা নিধান।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="3dp"
+                    android:text="বিঃদ্রঃ-আসর নামাজের শেষে ১০০ বার পাঠ করার তাসাবীহ্‌।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple_500"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="আসর নামাজের সময়-সূচী "
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="5dp"
+                    android:text="আসরঃ-যোহর নামাজের পর অর্থাৎ মধ্যাহ্ন পেরিয়ে সূর্য যখন পশ্চিম দিগন্ত রেখা থেকে বেশ কিছুটা উপরে অবস্থান করে এবং সূর্যের উজ্জ্বলতা তেজ বিরাজমান থাকে,সেই সময় থেকে সূর্যের সোনালী তামাটে বর্ণ মিটে গিয়ে রক্তিম বর্ণ ধারণ করার পূর্বেই নামাজ আদায় করে নেয়া ভাল। সে সময় সূর্য দিগন্ত রেখা থেকে এতটা উপরে থাকা উচিত যে,জানালা গলে ঘরের মাঝে ছড়িয়ে পড়া সূর্যকিরণ মিটে গিয়ে যেন ছায়া ঘনিয়ে না আসে। তবে ক্ষেত্র বিশেষে প্রয়োজনে সূর্যের অস্তগামী প্রথম অংশ দিগন্তরেখা অতিক্রম করার আগ মূহুর্ত পর্যন্ত নামাজ আদায় করে নেয়া যেতে পারে। সূর্যাস্তের সময় নামাজ পড়া নিষেধ।"
+                    android:textColor="@color/purple_500"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

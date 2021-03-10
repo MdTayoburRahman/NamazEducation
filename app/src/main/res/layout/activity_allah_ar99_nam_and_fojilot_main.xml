@@ -1,0 +1,1848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".Allah99Name.AllahAr99NamAndFojilotMainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:menu="@menu/top_app_bar"
+        app:title="আল্লাহর ৯৯টি গুণবাচক নাম" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="বিসমিল্লাহির রাহমানির রাহীম ।"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a1"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:tag="1"
+                    android:text="১. আল্লাহ্‌ \nالله "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a2"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+
+                    android:tag="2"
+                    android:text="২.আর-রহ়মান\nالرَّحْمَنُ"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a3"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="3"
+                    android:text="৩.আর-রহ়ীম\n الرَّحِيمُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a4"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="4"
+                    android:text="৪.আল-মালিক\n الْمَلِكُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a5"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="5"
+                    android:text="৫.আল-ক্বুদ্দুস\nالْقُدُّوسُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a6"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="6"
+                    android:text="৬.আস-সালাম\nالسَّلَامُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a7"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="7"
+                    android:text="৭.আল-মু’মিন\n الْمُؤْمِنُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a8"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="8"
+                    android:text="৮.আল-মুহাইমিন\n الْمُهَيْمِنُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a9"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="9"
+                    android:text=" ৯.আল-আ&apos;জীজ\n الْعَزِيزُ  "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a10"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="10"
+                    android:text="১০.আল-জাব্বার\n الْجَبَّارُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a11"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="11"
+                    android:text="১১.আল-মুতাকাব্বিইর\n الْمُتَكَبِّرُ "
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/a12"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="12"
+                    android:text="১২.আল-খলিক্ব\n  الْخَالِقُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a13"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="13"
+                    android:text="১৩ আল-বারি’\n الْبَارِئُ  "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a14"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="14"
+                    android:text="১৪.আল-মুসউয়ির\nالْمُصَوِّرُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a15"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="15"
+                    android:text="১৫.আল-গফ্ফার\nالْغَفَّارُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a16"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="16"
+                    android:text="১৬.আল-ক্বহ্হার\nالْقَهَّارُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a17"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="17"
+                    android:text="১৭.আল-ওয়াহ্হাব\n  الْوَهَّابُ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a18"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="18"
+                    android:text="১৮.আর-রাজ্জাক্ব\n  الرَّزَّاقُ "
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a19"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="19"
+                    android:text=" ১৯.আল-ফাত্তাহ\n الْفَتَّاحُ  "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a20"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="20"
+                    android:text="২০.আল-আলীম \nالْعَلِيمُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a21"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="21"
+                    android:text="২১.আল-ক্ববিদ্ব\n الْقَابِضُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a22"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="22"
+                    android:text="২২ .আল-বাসিত\nالْبَاسِطُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a23"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="23"
+                    android:text="২৩.আল-খ়¯ফিদ\nالْخَافِضُ"
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a24"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="24"
+                    android:text="২৪.আর-রফীই\nالرَّافِعُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a25"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="25"
+                    android:text="২৫.আল-মুই&apos;জ্\n  الْمُعِزُّ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a26"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="26"
+                    android:text="২৬.আল-মুঝ়িল\nالْمُذِلُّ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a27"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="27"
+                    android:text="২৭.আস-সামিই\n السَّمِيعُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a28"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="28"
+                    android:text="২৮.আল-বাছীর  \nالْبَصِيرُ"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a29"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="29"
+                    android:text="২৯.আল-হা়কাম\n  الْحَكَمُ"
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a30"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="30"
+                    android:text="৩০.আল-আদল্\nالْعَدْلُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a31"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="31"
+                    android:text="৩১.আল-লাতীফ\n  اللَّطِيفُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a32"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="32"
+                    android:text="৩২.আল-খবীর\nالْخَبِيرُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a33"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="33"
+                    android:text="৩৩.আল-হ়ালীম\nالْحَلِيمُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a34"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="34"
+                    android:text="৩৪.আল-আ&apos;জীম\nالْعَظِيمُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a35"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="35"
+                    android:text="৩৫.আল-গফুর\n الْغَفُورُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a36"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="36"
+                    android:text="৩৬.আশ্-শাকুর\n الشَّكُورُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a37"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="37"
+                    android:text="৩৭.আল-আ&apos;লিইউ\n  الْعَلِيُّ"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/a38"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="38"
+                    android:text="৩৮.আল-কাবীর\n الْكَبِيرُ  "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a39"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="39"
+                    android:text="৩৯.আল-হা&apos;ফীজ\n  الْحَفِيظُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a40"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="40"
+                    android:text="৪০.আল-মুক্বীত\n  الْمُقِيتُ "
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a41"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="41"
+                    android:text="৪১.আল-হ়াসীব\n  الْحَسِيبُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a42"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="42"
+                    android:text="৪২.আল-জালীল\nالْجَلِيلُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a43"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="43"
+                    android:text="৪৩.আল-কারীম\nالْكَرِيمُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a44"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="44"
+                    android:text="৪৪.আর-রক্বীব\n  الرَّقِيبُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a45"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="45"
+                    android:text="৪৫.আল-মুজীব\n  الْمُجِيبُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a46"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="46"
+                    android:text="৪৬.আল-ওয়াসি’\n الْوَاسِعُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a47"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="47"
+                    android:text="৪৭.আল-হ়াকীম\n الْحَكِيمُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a48"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="48"
+                    android:text="৪৮.আল-ওয়াদূদ\nالْوَدُودُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a49"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="49"
+                    android:text="৪৯.আল-মাজীদ\n  الْمَجِيدُ  "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a50"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="50"
+                    android:text="৫০.আল-বা‘ইস \nالْبَاعِثُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a51"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="51"
+                    android:text="৫১.আশ-শাহীদ\n  الشَّهِيدُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a52"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="52"
+                    android:text="৫২.আল-হা&apos;ক্ব\n  الْحَقُّ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a53"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="53"
+                    android:text="৫৩.আল-ওয়াকীল\n  الْوَكِيلُ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a54"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="54"
+                    android:text="৫৪.আল-ক্বউই\n  الْقَوِيُّ"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a55"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="55"
+                    android:text="৫৫.আল মাতীন\n  الْمَتِينُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a56"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="56"
+                    android:text="৫৬.আল-ওয়ালি\nالْوَلِيُّ "
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a57"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="57"
+                    android:text="৫৭.আল-হ়ামীদ\nالْحَمِيدُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a58"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="58"
+                    android:text="৫৮.আল-মুহ়সী\nالْمُحْصِي "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a59"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="59"
+                    android:text=" ৫৯.আল-মুব্দি\n  الْمُبْدِئُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a60"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="60"
+                    android:text="৬০.আল-মু’ঈদ\n  الْمُعِيدُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a61"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="61"
+                    android:text="৬১.আল-মুহ়ীই\nالْمُحْيِي "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a62"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="62"
+                    android:text="৬২.আল-মুমীত\nالْمُمِيتُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a63"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="63"
+                    android:text="৬৩.আল-হাইয়্যু\n  الْحَيُّ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a64"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="64"
+                    android:text="৬৪.আল-ক্বইয়ূম\nالْقَيُّومُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a65"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="65"
+                    android:text="৬৫.আল-ওয়াজিদ\n  الْوَاجِدُ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a66"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="66"
+                    android:text="৬৬.আল-মাজিদ\n  الْمَاجِدُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a67"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="67"
+                    android:text="৬৭.আল-ওয়াহ়িদ\nالْوَاحِدُ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a68"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="68"
+                    android:text="৬৮.আস-সমাদ\n  الصَّمَدُ  "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a69"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="69"
+                    android:text=" ৬৯.আল-ক্বদির\nالْقَادِرُ  "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a70"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="70"
+                    android:text="৭০.আল-মুক্বতাদির\n  الْمُقْتَدِرُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a71"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="71"
+                    android:text="৭১.আল-মুক্বদ্দিম\n  الْمُقَدِّمُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a72"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="72"
+                    android:text="৭২.আল-মুআক্ষির\n  الْمُؤَخِّرُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a73"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="73"
+                    android:text="৭৩.আল-আউয়াল\n الْأَوَّلُ "
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/a74"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="74"
+                    android:text="৭৪.আল-আখির\nالْآخِرُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a75"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="75"
+                    android:text="৭৫.আজ়-জহির\nالظَّاهِرُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a76"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="76"
+                    android:text="৭৬.আল-বাত়িন\n  الْبَاطِنُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a77"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="77"
+                    android:text="৭৭.আল-ওয়ালি\n  الْوَالِيَ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a78"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="78"
+                    android:text="৭৮.আল-মুতাআলী\n  الْمُتَعَالِي  "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a79"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="79"
+                    android:text="৭৯.আল-বার্র\nالْبَرُّ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a80"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="80"
+                    android:text="৮০.আত-তাওয়াব\n  التَّوَّابُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a81"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="81"
+                    android:text="৮১.আল-মুন্তাক্বিম\n  الْمُنْتَقِمُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a82"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="82"
+                    android:text="৮২.আল-’আফুউ\n  الْعَفُوُّ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a83"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="83"
+                    android:text="৮৩.আর-রউফ\nالرَّءُوفُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a84"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="84"
+                    android:text="৮৪.মালিকুল মুলক্\n  مَالِكُ الْمُلْكِ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a85"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="85"
+                    android:text="৮৫.জ়়ুল জালালি ওয়াল ইকরম \nذُو الْجَلَالِ وَالْإِكْرَامِ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a86"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="86"
+                    android:text="৮৬.আল-মুক্ব্সিত\nالْمُقْسِطُ "
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a87"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="87"
+                    android:text="৮৭.আল-জামিই\n الْجَامِعُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a88"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="88"
+                    android:text="৮৮.আল-গণিই\nالْغَنِيُّ  "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a89"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="89"
+                    android:text="৮৯.আল-মুগ’নি\n  الْمُغْنِي "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a90"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="90"
+                    android:text="৯০.আল-মানি\nالْمَانِعُ "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a91"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="91"
+                    android:text="৯১.আয্-যর\n الضَّارُّ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a92"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="92"
+                    android:text="৯২.আন-নাফি\nالنَّافِعُ "
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a93"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="93"
+                    android:text="৯৩.আন-নূর\nالنُّورُ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a94"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="94"
+                    android:text="৯৪.আল-হাদী\nالْهَادِي "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a95"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="95"
+                    android:text="৯৫.আল-বাদীই\n الْبَدِيعُ "
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/a96"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="96"
+                    android:text="৯৬.আল-বাকী\n  الْبَاقِي "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a97"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="97"
+                    android:text="৯৭.আল-ওয়ারিস\n الْوَارِثُ "
+                    android:textSize="19dp" />
+
+                <Button
+                    android:id="@+id/a98"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="98"
+                    android:text="৯৮.আর-রশীদ\n  الرَّشِيدُ  "
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp">
+
+                <Button
+                    android:id="@+id/a99"
+                    style="@style/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:gravity="center"
+                    android:tag="99"
+                    android:text=" ৯৯.আস-সবূর\n  الصَّبُورُ "
+                    android:textSize="19dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
