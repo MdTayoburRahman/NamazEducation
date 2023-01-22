@@ -88,7 +88,9 @@ public class ExoPlayerActivity extends AppCompatActivity {
         topAppBar.setOnMenuItemClickListener(item -> {
 
             if (item.getItemId() == R.id.about) {
-
+                player.stop();
+                player.release();
+                finish();
                 Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(intent);
                 return true;
@@ -109,8 +111,9 @@ public class ExoPlayerActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         player.stop();
         player.release();
+        super.onBackPressed();
+
     }
 }

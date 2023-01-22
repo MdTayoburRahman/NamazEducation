@@ -33,7 +33,7 @@
             android:layout_width="162dp"
             android:layout_height="141dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_appicon"
+            android:src="@drawable/ic_launcher"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="143dp" />
 

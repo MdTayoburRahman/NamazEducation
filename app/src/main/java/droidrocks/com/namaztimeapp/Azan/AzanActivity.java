@@ -49,11 +49,6 @@ public class AzanActivity extends AppCompatActivity{
     }
 
 
-
-
-
-
-
     private void topBar() {
 
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);  //  Fixed Portrait orientation

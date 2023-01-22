@@ -31,7 +31,6 @@
         app:show_buffering="when_playing"
         app:default_artwork="@drawable/ic_kalima"
         android:background="@color/purple_500"
-
         app:animation_enabled="true"
         app:show_shuffle_button="true" />
 

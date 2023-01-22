@@ -1,6 +1,7 @@
 package droidrocks.com.namaztimeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);  // desable dark mood
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -27,28 +28,13 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                checkInternet();
+                Intent SplashIntent = new Intent(SplashScreenActivity.this,MainActivity.class);
+                startActivity(SplashIntent);
+                finish();
 
 
             }
-        },3000);
+        },1000);
     }
-    @SuppressLint("WrongConstant")
-    private void checkInternet() {
-        if (AppInternetStatus.getInstance(this).isOnline()) {
-            Log.d("TAG", "checkInternet: Internet Connected" );
-            Intent SplashIntent = new Intent(SplashScreenActivity.this,MainActivity.class);
-            startActivity(SplashIntent);
-            finish();
 
-
-        } else {
-            Log.d("TAG", "checkInternet: Internet not Connected" );
-            Intent SplashIntent = new Intent(SplashScreenActivity.this, InternetCheckActivity.class);
-            startActivity(SplashIntent);
-            finish();
-
-        }
-
-    }
 }

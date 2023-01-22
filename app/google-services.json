@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170510461373",
+    "project_id": "namaztimeapp",
+    "storage_bucket": "namaztimeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170510461373:android:3c5dcb23d21537769b0ad4",
+        "android_client_info": {
+          "package_name": "droidrocks.com.namaztimeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170510461373-cthbgj535tct4fre1kmsaju80rndcaol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAncGFmStWzAZ-ktZ5JLhpoGVdAZdLSqI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170510461373-cthbgj535tct4fre1kmsaju80rndcaol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
