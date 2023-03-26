@@ -119,6 +119,7 @@
          });
 
          viewModel.MakeVolleyApiCall(MainActivity.this);
+
      }
 
      private void populateRV(List<PostDataModel> blogPostList) {
@@ -128,6 +129,7 @@
              blogPostAdapter = new BlogPostAdapter(MainActivity.this,blogPostList);
              recyclerView.setAdapter(blogPostAdapter);
          }
+
      }
 
 
