@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 

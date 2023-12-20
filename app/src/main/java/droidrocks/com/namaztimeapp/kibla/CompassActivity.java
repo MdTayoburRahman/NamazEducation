@@ -1,6 +1,5 @@
 package droidrocks.com.namaztimeapp.kibla;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -8,7 +7,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -16,7 +14,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class CompassActivity extends AppCompatActivity {

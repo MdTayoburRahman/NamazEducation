@@ -21,7 +21,7 @@
         tools:targetApi="s"
         android:dataExtractionRules="@xml/data_extraction_rules">
         <activity
-            android:name=".PostViewActivity"
+            android:name=".Activitys.PostViewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -34,7 +34,7 @@
             android:name=".Azan.AzanActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".Activitys.SplashScreenActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -53,7 +53,7 @@
             android:name=".Allah99Name.AllahAr99NamAndFojilotMainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TasbihActivity"
+            android:name=".Activitys.TasbihActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ImportentSurah.ImportantSuraActivity"
@@ -80,12 +80,12 @@
             android:name=".Tools.InternetCheckActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RakatTableActivity"
+            android:name=".Activitys.RakatTableActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".OjurNiyomActivity"
+            android:name=".Activitys.OjurNiyomActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".AboutActivity" />
+        <activity android:name=".Activitys.AboutActivity" />
         <activity
             android:name=".kibla.CompassActivity"
             android:screenOrientation="portrait" />
@@ -96,7 +96,7 @@
             android:name=".kalima.KalimaContentView"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activitys.MainActivity"
             android:screenOrientation="portrait" />
 
         <service

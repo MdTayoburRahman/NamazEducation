@@ -1,4 +1,4 @@
-package droidrocks.com.namaztimeapp;
+package droidrocks.com.namaztimeapp.Activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,6 +13,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import java.util.Objects;
+
+import droidrocks.com.namaztimeapp.R;
 
 public class AboutActivity extends AppCompatActivity {
     Toolbar topAppBar;

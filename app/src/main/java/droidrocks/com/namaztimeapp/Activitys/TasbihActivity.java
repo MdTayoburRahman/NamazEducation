@@ -1,4 +1,4 @@
-package droidrocks.com.namaztimeapp;
+package droidrocks.com.namaztimeapp.Activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -9,8 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
+
+import droidrocks.com.namaztimeapp.R;
 
 public class TasbihActivity extends AppCompatActivity {
 

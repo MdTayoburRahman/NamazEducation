@@ -15,13 +15,10 @@ import android.widget.Toast;
 
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.ui.StyledPlayerView;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
-import droidrocks.com.namaztimeapp.MainActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
-import droidrocks.com.namaztimeapp.SplashScreenActivity;
 import droidrocks.com.namaztimeapp.Tools.AppInternetStatus;
 import droidrocks.com.namaztimeapp.Tools.InternetCheckActivity;
 

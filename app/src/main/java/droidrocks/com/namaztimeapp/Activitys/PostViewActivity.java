@@ -1,4 +1,4 @@
-package droidrocks.com.namaztimeapp;
+package droidrocks.com.namaztimeapp.Activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 

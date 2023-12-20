@@ -13,7 +13,7 @@ import androidx.core.app.NotificationManagerCompat;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import droidrocks.com.namaztimeapp.MainActivity;
+import droidrocks.com.namaztimeapp.Activitys.MainActivity;
 import droidrocks.com.namaztimeapp.R;
 
 

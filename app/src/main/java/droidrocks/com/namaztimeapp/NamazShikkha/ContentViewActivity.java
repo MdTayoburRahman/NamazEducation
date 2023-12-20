@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class ContentViewActivity extends AppCompatActivity {

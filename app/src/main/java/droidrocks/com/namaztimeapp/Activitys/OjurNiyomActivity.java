@@ -1,4 +1,4 @@
-package droidrocks.com.namaztimeapp;
+package droidrocks.com.namaztimeapp.Activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,6 +8,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+
+import droidrocks.com.namaztimeapp.R;
 
 public class OjurNiyomActivity extends AppCompatActivity {
 

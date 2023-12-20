@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class AllahAr99NamAndFojilotMainActivity extends AppCompatActivity implements View.OnClickListener {

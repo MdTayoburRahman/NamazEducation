@@ -11,7 +11,7 @@ import android.view.WindowManager;
 
 import com.google.android.material.card.MaterialCardView;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class NamazerNiyotActivity extends AppCompatActivity implements View.OnClickListener {

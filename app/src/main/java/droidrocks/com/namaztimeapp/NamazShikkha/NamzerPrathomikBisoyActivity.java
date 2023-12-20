@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class NamzerPrathomikBisoyActivity extends AppCompatActivity {

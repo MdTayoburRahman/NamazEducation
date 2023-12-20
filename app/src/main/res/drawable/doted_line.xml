@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <stroke
+        android:color="#7C7C7C"
+        android:dashWidth="4dp"
+    android:gapWidth="4dp" />
+
+    <!-- You can also specify the line width if needed -->
+    <!--<stroke
+        android:color="#000000"
+        android:width="2dp"
+        android:dashWidth="4dp"
+        android:gapWidth="4dp" />-->
+
+</shape>

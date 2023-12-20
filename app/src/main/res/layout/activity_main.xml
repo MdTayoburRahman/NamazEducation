@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activitys.MainActivity">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -59,7 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:background="#EEEEEE"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,11 +71,11 @@
                 android:orientation="horizontal"
                 android:weightSum="3">
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/namazShikkaid"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -103,13 +102,13 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/rakatTabelCard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -136,13 +135,13 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/ojurNiyomCard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -169,7 +168,7 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
 
 
@@ -182,11 +181,11 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="3">
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/allah_99Name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -213,13 +212,13 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/all_surah"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -246,13 +245,13 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/compassCard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -279,7 +278,7 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
 
 
@@ -293,11 +292,11 @@
                 android:weightSum="3">
 
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/tasbih"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -324,13 +323,13 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/kalima"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -357,13 +356,13 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:id="@+id/azan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1.5dp"
+                    android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:clickable="true"
                     app:cardCornerRadius="5dp">
@@ -390,7 +389,7 @@
                     </LinearLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -432,7 +431,6 @@
 
             </LinearLayout>
         </com.facebook.shimmer.ShimmerFrameLayout>
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/RecyclerView"

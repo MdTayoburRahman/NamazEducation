@@ -2,7 +2,6 @@ package droidrocks.com.namaztimeapp.kalima;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -12,7 +11,7 @@ import android.view.WindowManager;
 
 import com.google.android.material.card.MaterialCardView;
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class KalimaActivity extends AppCompatActivity implements View.OnClickListener {

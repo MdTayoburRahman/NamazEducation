@@ -1,4 +1,4 @@
- package droidrocks.com.namaztimeapp;
+ package droidrocks.com.namaztimeapp.Activitys;
 
  import android.Manifest;
  import android.annotation.SuppressLint;
@@ -13,6 +13,7 @@
  import android.view.MenuItem;
  import android.view.View;
  import android.view.WindowManager;
+ import android.widget.LinearLayout;
 
  import androidx.annotation.NonNull;
  import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -46,6 +47,7 @@
  import droidrocks.com.namaztimeapp.Azan.AzanActivity;
  import droidrocks.com.namaztimeapp.ImportentSurah.ImportantSuraActivity;
  import droidrocks.com.namaztimeapp.NamazShikkha.NanazShikkahActivity;
+ import droidrocks.com.namaztimeapp.R;
  import droidrocks.com.namaztimeapp.databinding.ActivityMainBinding;
  import droidrocks.com.namaztimeapp.kalima.KalimaActivity;
  import droidrocks.com.namaztimeapp.kibla.CompassActivity;
@@ -139,15 +141,15 @@
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
 
-        MaterialCardView CompassCard = findViewById(R.id.compassCard);
-        MaterialCardView ojurNiyomCard = findViewById(R.id.ojurNiyomCard);
-        MaterialCardView rakatTabelCard = findViewById(R.id.rakatTabelCard);
-        MaterialCardView namazShikkaid = findViewById(R.id.namazShikkaid);
-        MaterialCardView all_surah = findViewById(R.id.all_surah);
-        MaterialCardView tasbih = findViewById(R.id.tasbih);
-        MaterialCardView allah_99Name = findViewById(R.id.allah_99Name);
-        MaterialCardView kalima = findViewById(R.id.kalima);
-        MaterialCardView azan = findViewById(R.id.azan);
+        LinearLayout CompassCard = findViewById(R.id.compassCard);
+         LinearLayout ojurNiyomCard = findViewById(R.id.ojurNiyomCard);
+         LinearLayout rakatTabelCard = findViewById(R.id.rakatTabelCard);
+         LinearLayout namazShikkaid = findViewById(R.id.namazShikkaid);
+         LinearLayout all_surah = findViewById(R.id.all_surah);
+         LinearLayout tasbih = findViewById(R.id.tasbih);
+         LinearLayout allah_99Name = findViewById(R.id.allah_99Name);
+         LinearLayout kalima = findViewById(R.id.kalima);
+         LinearLayout azan = findViewById(R.id.azan);
 
 
         CompassCard.setOnClickListener(this);

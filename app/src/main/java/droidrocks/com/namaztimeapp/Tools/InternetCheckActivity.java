@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
-import droidrocks.com.namaztimeapp.MainActivity;
+import droidrocks.com.namaztimeapp.Activitys.MainActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class InternetCheckActivity extends AppCompatActivity {

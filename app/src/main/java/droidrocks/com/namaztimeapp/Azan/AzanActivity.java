@@ -13,7 +13,7 @@ import android.view.WindowManager;
 
 
 
-import droidrocks.com.namaztimeapp.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
 
 public class AzanActivity extends AppCompatActivity{

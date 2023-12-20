@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-import droidrocks.com.namaztimeapp.PostViewActivity;
+import droidrocks.com.namaztimeapp.Activitys.PostViewActivity;
 import droidrocks.com.namaztimeapp.R;
 import droidrocks.com.namaztimeapp.databinding.BlogpostItemRawBinding;
 
