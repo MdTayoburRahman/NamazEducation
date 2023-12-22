@@ -27,7 +27,6 @@
  import androidx.recyclerview.widget.RecyclerView;
 
  import com.facebook.shimmer.ShimmerFrameLayout;
- import com.google.android.material.card.MaterialCardView;
  import com.google.android.material.navigation.NavigationView;
  import com.google.firebase.messaging.FirebaseMessaging;
  import com.karumi.dexter.Dexter;
@@ -44,10 +43,10 @@
  import droidrocks.com.namaztimeapp.API.PostDataModel;
  import droidrocks.com.namaztimeapp.API.PostViewModel;
  import droidrocks.com.namaztimeapp.Allah99Name.AllahAr99NamAndFojilotMainActivity;
- import droidrocks.com.namaztimeapp.Azan.AzanActivity;
  import droidrocks.com.namaztimeapp.ImportentSurah.ImportantSuraActivity;
  import droidrocks.com.namaztimeapp.NamazShikkha.NanazShikkahActivity;
  import droidrocks.com.namaztimeapp.R;
+ import droidrocks.com.namaztimeapp.Utils.UpdateChecker;
  import droidrocks.com.namaztimeapp.databinding.ActivityMainBinding;
  import droidrocks.com.namaztimeapp.kalima.KalimaActivity;
  import droidrocks.com.namaztimeapp.kibla.CompassActivity;
@@ -55,7 +54,8 @@
 
  public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private DrawerLayout drawerLayout;
+     private static final String TAG = "MainActivity";
+     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Toolbar topAppBar;
     ActivityMainBinding binding;
@@ -84,7 +84,16 @@
         checkAllPermission();
         RateAppAlert();
         FirebaseMessaging.getInstance().setAutoInitEnabled(true);
-        fatchData();
+        try {
+            // Check for updates
+            UpdateChecker.checkForUpdates(this);
+            UpdateChecker.checkForReview(MainActivity.this);
+            fatchData();
+        } catch (Exception e) {
+            Log.d(TAG, "onCreate: "+e.getMessage());
+            e.printStackTrace();
+        }
+
 
     }
 
@@ -149,7 +158,6 @@
          LinearLayout tasbih = findViewById(R.id.tasbih);
          LinearLayout allah_99Name = findViewById(R.id.allah_99Name);
          LinearLayout kalima = findViewById(R.id.kalima);
-         LinearLayout azan = findViewById(R.id.azan);
 
 
         CompassCard.setOnClickListener(this);
@@ -160,7 +168,6 @@
         tasbih.setOnClickListener(this);
         allah_99Name.setOnClickListener(this);
         kalima.setOnClickListener(this);
-        azan.setOnClickListener(this);
 
     }
 
@@ -191,12 +198,30 @@
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+                if (item.getItemId() == R.id.privacy) {
+
+                    if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                    }
+                    startActivity(new Intent(MainActivity.this, BrowserActivity.class)
+                            .putExtra("pageFileName", "privacy.html")
+                            .putExtra("pageTitle", "Privacy Policy")
+                    );
+                }
+                if (item.getItemId() == R.id.terms_condition) {
+
+                    startActivity(new Intent(MainActivity.this, BrowserActivity.class)
+                            .putExtra("pageFileName", "terms.html")
+                            .putExtra("pageTitle", "Terms & Conditions"));
+
+                }
+
                 if (item.getItemId() == R.id.MoreApp) {
 
                     try {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:Droid+Rocks")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:Md+Tayobur+Rahman")));
                     } catch (android.content.ActivityNotFoundException anfe) {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/developer?id=Droid+Rocks")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/developer?id=Md+Tayobur+Rahman")));
                     }
 
                 }
@@ -295,9 +320,7 @@
         if (v.getId() == R.id.kalima) {
             startActivity(new Intent(MainActivity.this, KalimaActivity.class));
         }
-        if (v.getId()==R.id.azan){
-            startActivity(new Intent(MainActivity.this, AzanActivity.class));
-        }
+
 
 
     }

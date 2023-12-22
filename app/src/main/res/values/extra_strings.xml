@@ -428,17 +428,4 @@
     <string name="kalema_taioba">কালেমা তাইয়্যেবাহ</string>
     <string name="kalema_ruddor">কালেমা রদ্দে কুফর</string>
 
-    <string-array name="azan_list">
-        <item>মধুর কন্ঠে আযান ১</item>
-        <item>মধুর কন্ঠে আযান ২</item>
-        <item>মধুর কন্ঠে আযান ৩</item>
-        <item>মধুর কন্ঠে আযান ৪</item>
-        <item>মধুর কন্ঠে আযান ৫</item>
-        <item>মধুর কন্ঠে আযান ৬</item>
-        <item>মধুর কন্ঠে আযান ৭</item>
-        <item>মধুর কন্ঠে আযান ৮</item>
-        <item>মধুর কন্ঠে আযান ৯</item>
-        <item>মধুর কন্ঠে আযান ১০</item>
-    </string-array>
-
 </resources>

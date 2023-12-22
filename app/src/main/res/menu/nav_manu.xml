@@ -1,52 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <group android:checkableBehavior="single"
-        android:orderInCategory="@android:integer/config_shortAnimTime"
-        android:menuCategory="secondary">
-
-        <item
-            android:id="@+id/about"
-            android:icon="@drawable/ic_baseline_about"
-            android:title="About" />
-
-        <item android:id="@+id/shareid"
-            android:icon="@drawable/ic_baseline_share"
-            android:title="share App"/>
-
-        <item android:id="@+id/rateAppid"
-            android:icon="@drawable/ic_baseline_star_rate"
-            android:title="Rate this App"/>
+    <item
+        android:id="@+id/terms_condition"
+        android:icon="@drawable/ic_terms"
+        android:title="Terms and Conditions" />
+    <item
+        android:id="@+id/privacy"
+        android:icon="@drawable/ic_baseline_privacy"
+        android:title="Privacy Policy" />
 
 
 
-        <item android:title="Communication">
+    <item android:id="@+id/shareid"
+        android:icon="@drawable/ic_baseline_share"
+        android:title="share App"/>
 
-            <menu>
-                <item
-                    android:id="@+id/feedbackid"
-                    android:icon="@drawable/ic_baseline_feedback"
-                    android:title="Feedback" />
-                <item
-                    android:id="@+id/MoreApp"
-                    android:icon="@drawable/ic_baseline_android"
-                    android:title="More Apps" />
+    <item android:id="@+id/rateAppid"
+        android:icon="@drawable/ic_baseline_star_rate"
+        android:title="Rate this App"/>
 
-                <item android:id="@+id/exitid"
-                    android:icon="@drawable/ic_baseline_exit"
-                    android:title="Exit"/>
-            </menu>
-        </item>
+    <item
+        android:id="@+id/feedbackid"
+        android:icon="@drawable/ic_baseline_feedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/MoreApp"
+        android:icon="@drawable/ic_baseline_android"
+        android:title="More Apps" />
 
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_about"
+        android:title="About" />
 
-
-
-    </group>
-
-
-
-
+    <item android:id="@+id/exitid"
+        android:icon="@drawable/ic_baseline_exit"
+        android:title="Exit"/>
 
 
 
