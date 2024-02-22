@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import droidrocks.com.namaztimeapp.R;
+import droidrocks.com.namaztimeapp.Utils.AppUtils;
 
 public class RakatTableActivity extends AppCompatActivity {
 
@@ -29,8 +30,7 @@ public class RakatTableActivity extends AppCompatActivity {
 
             if (item.getItemId() == R.id.about) {
 
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(RakatTableActivity.this);
                 return true;
             }
 

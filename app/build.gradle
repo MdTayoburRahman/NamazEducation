@@ -12,8 +12,8 @@ android {
         applicationId "droidrocks.com.namaztimeapp"
         minSdk 24
         targetSdk 34
-        versionCode 20
-        versionName "1.2.20"
+        versionCode 22
+        versionName "1.2.22"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

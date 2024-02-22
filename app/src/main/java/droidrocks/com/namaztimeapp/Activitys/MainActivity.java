@@ -4,17 +4,23 @@
  import android.annotation.SuppressLint;
  import android.app.AlertDialog;
  import android.content.ActivityNotFoundException;
+ import android.content.Context;
  import android.content.Intent;
  import android.content.pm.ActivityInfo;
+ import android.content.pm.PackageInfo;
  import android.net.Uri;
  import android.os.Bundle;
  import android.os.Handler;
  import android.util.Log;
+ import android.view.LayoutInflater;
  import android.view.MenuItem;
  import android.view.View;
  import android.view.WindowManager;
+ import android.widget.Button;
  import android.widget.LinearLayout;
+ import android.widget.TextView;
 
+ import androidx.activity.OnBackPressedCallback;
  import androidx.annotation.NonNull;
  import androidx.appcompat.app.ActionBarDrawerToggle;
  import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +33,7 @@
  import androidx.recyclerview.widget.RecyclerView;
 
  import com.facebook.shimmer.ShimmerFrameLayout;
+ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
  import com.google.android.material.navigation.NavigationView;
  import com.google.firebase.messaging.FirebaseMessaging;
  import com.karumi.dexter.Dexter;
@@ -36,6 +43,7 @@
  import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
  import com.shurajcodx.appratingdialog.AppRatingDialog;
 
+ import java.util.Calendar;
  import java.util.List;
  import java.util.Objects;
 
@@ -46,6 +54,7 @@
  import droidrocks.com.namaztimeapp.ImportentSurah.ImportantSuraActivity;
  import droidrocks.com.namaztimeapp.NamazShikkha.NanazShikkahActivity;
  import droidrocks.com.namaztimeapp.R;
+ import droidrocks.com.namaztimeapp.Utils.AppUtils;
  import droidrocks.com.namaztimeapp.Utils.UpdateChecker;
  import droidrocks.com.namaztimeapp.databinding.ActivityMainBinding;
  import droidrocks.com.namaztimeapp.kalima.KalimaActivity;
@@ -68,8 +77,7 @@
 
 
 
-
-    @SuppressLint("SourceLockedOrientationActivity")
+     @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,6 +91,7 @@
         SetupNavDrawer();
         checkAllPermission();
         RateAppAlert();
+        backPressed();
         FirebaseMessaging.getInstance().setAutoInitEnabled(true);
         try {
             // Check for updates
@@ -177,9 +186,7 @@
         topAppBar.setOnMenuItemClickListener(item -> {
 
             if (item.getItemId() == R.id.about) {
-
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(MainActivity.this);
                 return true;
             }
 
@@ -188,7 +195,10 @@
         });
     }
 
-    private void SetupNavDrawer() {
+
+
+
+     private void SetupNavDrawer() {
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, topAppBar, R.string.nav_open, R.string.nav_close);
         drawerLayout.addDrawerListener(toggle);
@@ -238,7 +248,7 @@
 
                 }
                 if (item.getItemId() == R.id.about) {
-                     startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                    AppUtils.showAboutAlert(MainActivity.this);
                 }
                 if (item.getItemId() == R.id.shareid) {
                     Uri url = Uri.parse("http://play.google.com/store/apps/details?id=" + Objects.requireNonNull(getApplicationContext()).getPackageName());
@@ -369,14 +379,29 @@
 
     }
 
-    @Override
-    public void onBackPressed() {
+
+     private void backPressed() {
+         getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
+             @Override
+             public void handleOnBackPressed() {
+                 //TODO
+                 try {
+                     showExitAlert();
+                 } catch (Exception e) {
+                     throw new RuntimeException(e);
+                 }
+             }
+         });
+     }
+
+     private void showExitAlert() {
+
          if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
              drawerLayout.closeDrawer(GravityCompat.START);
          } else if (!drawerLayout.isDrawerOpen(GravityCompat.START)) {
 
-             AlertDialog.Builder alertDialogBuilder;
-             alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+             MaterialAlertDialogBuilder alertDialogBuilder;
+             alertDialogBuilder = new MaterialAlertDialogBuilder(MainActivity.this);
              alertDialogBuilder.setTitle("Do you want to exit application?");
 
              alertDialogBuilder.setCancelable(false);
@@ -386,13 +411,11 @@
                  System.exit(0);
              });
              alertDialogBuilder.setNegativeButton("No", (dialogInterface, i) -> dialogInterface.cancel());
-             AlertDialog alertDialog = alertDialogBuilder.create();
+             androidx.appcompat.app.AlertDialog alertDialog = alertDialogBuilder.create();
              alertDialog.show();
 
-         } else {
-             super.onBackPressed();
          }
      }
 
 
-}
+ }

@@ -10,8 +10,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.MainActivity;
 import droidrocks.com.namaztimeapp.R;
+import droidrocks.com.namaztimeapp.Utils.AppUtils;
 
 public class AllahAr99NamAndFojilotMainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -265,8 +266,7 @@ public class AllahAr99NamAndFojilotMainActivity extends AppCompatActivity implem
 
             if (item.getItemId() == R.id.about) {
 
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(this);
                 return true;
             }
 

@@ -11,8 +11,8 @@ import android.view.WindowManager;
 
 import com.google.android.material.card.MaterialCardView;
 
-import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
+import droidrocks.com.namaztimeapp.Utils.AppUtils;
 
 public class NamazerNiyotActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -50,9 +50,7 @@ public class NamazerNiyotActivity extends AppCompatActivity implements View.OnCl
         topAppBar.setOnMenuItemClickListener(item -> {
 
             if (item.getItemId() == R.id.about) {
-
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(this);
                 return true;
             }
 

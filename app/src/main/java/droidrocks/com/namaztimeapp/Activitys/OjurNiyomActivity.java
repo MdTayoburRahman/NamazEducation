@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import droidrocks.com.namaztimeapp.R;
+import droidrocks.com.namaztimeapp.Utils.AppUtils;
 
 public class OjurNiyomActivity extends AppCompatActivity {
 
@@ -28,9 +29,7 @@ public class OjurNiyomActivity extends AppCompatActivity {
         topAppBar.setOnMenuItemClickListener(item -> {
 
             if (item.getItemId() == R.id.about) {
-
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(OjurNiyomActivity.this);
                 return true;
             }
 

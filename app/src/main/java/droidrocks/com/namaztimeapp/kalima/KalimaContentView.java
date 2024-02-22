@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
 import droidrocks.com.namaztimeapp.R;
+import droidrocks.com.namaztimeapp.Utils.AppUtils;
 
 public class KalimaContentView extends AppCompatActivity {
     private String tileText;
@@ -60,9 +60,7 @@ public class KalimaContentView extends AppCompatActivity {
         topAppBar.setOnMenuItemClickListener(item -> {
 
             if (item.getItemId() == R.id.about) {
-
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(this);
                 return true;
             }
 

@@ -16,8 +16,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import droidrocks.com.namaztimeapp.Activitys.AboutActivity;
+import droidrocks.com.namaztimeapp.Activitys.MainActivity;
 import droidrocks.com.namaztimeapp.R;
+import droidrocks.com.namaztimeapp.Utils.AppUtils;
 
 public class AllahMainActivity extends AppCompatActivity {
 
@@ -131,8 +132,7 @@ public class AllahMainActivity extends AppCompatActivity {
 
             if (item.getItemId() == R.id.about) {
 
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                AppUtils.showAboutAlert(AllahMainActivity.this);
                 return true;
             }
 

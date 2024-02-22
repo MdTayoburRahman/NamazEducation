@@ -16,9 +16,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.IntentSender;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
 import com.google.android.play.core.install.model.AppUpdateType;
@@ -30,27 +35,59 @@ import com.google.android.play.core.tasks.Task;
 
 public class UpdateChecker {
 
+    public static final String TAG = "UpdateChecker";
     public static final int UPDATE_REQUEST_CODE = 123;
 
     public static void checkForUpdates(@NonNull Activity activity) {
         // Create an instance of the AppUpdateManager
         AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(activity);
+
         // Check for updates
         appUpdateManager.getAppUpdateInfo().addOnSuccessListener(appUpdateInfo -> {
-            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
-                    && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)) {
-                // If an update is available and allowed, start the update flow
-                try {
-                    appUpdateManager.startUpdateFlowForResult(
-                            appUpdateInfo,
-                            AppUpdateType.IMMEDIATE,
-                            activity,
-                            UPDATE_REQUEST_CODE);
-                } catch (IntentSender.SendIntentException e) {
-                    e.printStackTrace();
+            try {
+                // Get the current app version code
+                PackageInfo packageInfo = activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0);
+                int currentVersionCode = packageInfo.versionCode;
+                Log.d(TAG, "checkForUpdates: currentVersionCode =  "+currentVersionCode);
+                Log.d(TAG, "checkForUpdates: remoteVersionCode =  "+appUpdateInfo.availableVersionCode());
+
+                if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                        && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)
+                        && appUpdateInfo.availableVersionCode() > currentVersionCode) {
+                    // If an update is available, and the available version code is greater than the current version code, show the update dialog
+                    showUpdateDialog(appUpdateManager, appUpdateInfo, activity);
                 }
+            } catch (PackageManager.NameNotFoundException e) {
+                Log.d(TAG, "checkForUpdates: "+e.getMessage());
+                e.printStackTrace();
             }
         });
+    }
+
+
+    private static void showUpdateDialog(AppUpdateManager appUpdateManager, AppUpdateInfo appUpdateInfo,
+                                         Activity activity) {
+        new MaterialAlertDialogBuilder(activity)
+                .setTitle("Update Available")
+                .setMessage("A new version of the app is available. Would you like to update now?")
+                .setPositiveButton("Update Now", (dialog, which) -> {
+                    try {
+                        appUpdateManager.startUpdateFlowForResult(
+                                appUpdateInfo,
+                                AppUpdateType.IMMEDIATE,
+                                activity,
+                                UPDATE_REQUEST_CODE);
+                    } catch (IntentSender.SendIntentException e) {
+                        Log.d(TAG, "showUpdateDialog: "+e.getMessage());
+                        e.printStackTrace();
+
+                    }
+                })
+                .setNegativeButton("Cancel", (dialogInterface, i) -> {
+                    dialogInterface.dismiss();
+                })
+                .setCancelable(false)
+                .show();
     }
 
     public static void checkForReview(Context context) {
