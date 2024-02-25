@@ -4,21 +4,15 @@
  import android.annotation.SuppressLint;
  import android.app.AlertDialog;
  import android.content.ActivityNotFoundException;
- import android.content.Context;
  import android.content.Intent;
  import android.content.pm.ActivityInfo;
- import android.content.pm.PackageInfo;
  import android.net.Uri;
  import android.os.Bundle;
- import android.os.Handler;
  import android.util.Log;
- import android.view.LayoutInflater;
  import android.view.MenuItem;
  import android.view.View;
  import android.view.WindowManager;
- import android.widget.Button;
  import android.widget.LinearLayout;
- import android.widget.TextView;
 
  import androidx.activity.OnBackPressedCallback;
  import androidx.annotation.NonNull;
@@ -27,12 +21,7 @@
  import androidx.appcompat.widget.Toolbar;
  import androidx.core.view.GravityCompat;
  import androidx.drawerlayout.widget.DrawerLayout;
- import androidx.lifecycle.Observer;
- import androidx.lifecycle.ViewModelProvider;
- import androidx.recyclerview.widget.GridLayoutManager;
- import androidx.recyclerview.widget.RecyclerView;
 
- import com.facebook.shimmer.ShimmerFrameLayout;
  import com.google.android.material.dialog.MaterialAlertDialogBuilder;
  import com.google.android.material.navigation.NavigationView;
  import com.google.firebase.messaging.FirebaseMessaging;
@@ -43,13 +32,9 @@
  import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
  import com.shurajcodx.appratingdialog.AppRatingDialog;
 
- import java.util.Calendar;
  import java.util.List;
  import java.util.Objects;
 
- import droidrocks.com.namaztimeapp.API.BlogPostAdapter;
- import droidrocks.com.namaztimeapp.API.PostDataModel;
- import droidrocks.com.namaztimeapp.API.PostViewModel;
  import droidrocks.com.namaztimeapp.Allah99Name.AllahAr99NamAndFojilotMainActivity;
  import droidrocks.com.namaztimeapp.ImportentSurah.ImportantSuraActivity;
  import droidrocks.com.namaztimeapp.NamazShikkha.NanazShikkahActivity;
@@ -69,11 +54,6 @@
     private Toolbar topAppBar;
     ActivityMainBinding binding;
 
-    BlogPostAdapter blogPostAdapter;
-    PostViewModel viewModel;
-
-     RecyclerView recyclerView;
-    private ShimmerFrameLayout shimmerFrameLayout;
 
 
 
@@ -97,7 +77,6 @@
             // Check for updates
             UpdateChecker.checkForUpdates(this);
             UpdateChecker.checkForReview(MainActivity.this);
-            fatchData();
         } catch (Exception e) {
             Log.d(TAG, "onCreate: "+e.getMessage());
             e.printStackTrace();
@@ -105,53 +84,6 @@
 
 
     }
-
-
-
-     private void fatchData() {
-         shimmerFrameLayout = binding.ShimmerFrameLayout;
-         if (!shimmerFrameLayout.isShimmerVisible()) {
-             shimmerFrameLayout.setVisibility(View.VISIBLE);
-             recyclerView.setVisibility(View.GONE);
-         }
-         shimmerFrameLayout.startShimmer();
-
-         viewModel = new ViewModelProvider(this).get(PostViewModel.class);
-         viewModel.getListMutableLiveData().observe(this, new Observer<List<PostDataModel>>() {
-             @Override
-             public void onChanged(List<PostDataModel> postDataModels) {
-                 if (postDataModels!=null){
-                     populateRV(postDataModels);
-                     new Handler().postDelayed(new Runnable() {
-                         @Override
-                         public void run() {
-                             //stop loading animation
-                             shimmerFrameLayout.stopShimmer();
-                             //hide the animation layout
-                             shimmerFrameLayout.setVisibility(View.GONE);
-                             //make visible recycler view
-                             recyclerView.setVisibility(View.VISIBLE);
-                         }
-                     }, 1000);
-                 }
-
-             }
-         });
-
-         viewModel.MakeVolleyApiCall(MainActivity.this);
-
-     }
-
-     private void populateRV(List<PostDataModel> blogPostList) {
-        recyclerView = binding.RecyclerView;
-         if (blogPostList.size()>0){
-             recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 2));
-             blogPostAdapter = new BlogPostAdapter(MainActivity.this,blogPostList);
-             recyclerView.setAdapter(blogPostAdapter);
-         }
-
-     }
-
 
 
      private void init() {
