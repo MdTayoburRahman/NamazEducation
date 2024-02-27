@@ -52,7 +52,7 @@
      private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Toolbar topAppBar;
-    ActivityMainBinding binding;
+    private ActivityMainBinding binding;
 
 
 
