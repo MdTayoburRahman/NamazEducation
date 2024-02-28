@@ -21,6 +21,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="s">
         <activity
+            android:name=".Activitys.HadithActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.BlogPostActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activitys.BrowserActivity"
             android:exported="false" />
         <activity
@@ -46,72 +52,72 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Allah99Name.AllahMainActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Allah99Name.AllahAr99NamAndFojilotMainActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.TasbihActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ImportentSurah.ImportantSuraActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.ContentViewActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamazPoddotiMainActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamazerNiyotActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamzerPrathomikBisoyActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamazerDowaMainActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NanazShikkahActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Tools.InternetCheckActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.RakatTableActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.OjurNiyomActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".kibla.CompassActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ImportentSurah.SuraContentView"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".kalima.KalimaContentView"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.MainActivity"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
         <service
             android:name=".Tools.FirebasePushNotificationService"

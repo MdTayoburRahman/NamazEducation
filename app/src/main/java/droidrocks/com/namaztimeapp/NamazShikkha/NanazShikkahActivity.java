@@ -46,16 +46,6 @@ public class NanazShikkahActivity extends AppCompatActivity implements View.OnCl
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //remove the notifcation bar
         Toolbar topAppBar = findViewById(R.id.toolbar);
 
-        topAppBar.setOnMenuItemClickListener(item -> {
-
-            if (item.getItemId() == R.id.about) {
-                AppUtils.showAboutAlert(this);
-                return true;
-            }
-
-            return false;
-        });
-
         topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

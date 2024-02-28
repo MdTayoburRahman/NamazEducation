@@ -57,15 +57,6 @@ public class KalimaContentView extends AppCompatActivity {
         Toolbar topAppBar = findViewById(R.id.toolbar);
         topAppBar.setTitle(tileText);
 
-        topAppBar.setOnMenuItemClickListener(item -> {
-
-            if (item.getItemId() == R.id.about) {
-                AppUtils.showAboutAlert(this);
-                return true;
-            }
-
-            return false;
-        });
 
         topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

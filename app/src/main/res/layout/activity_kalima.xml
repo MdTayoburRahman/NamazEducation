@@ -16,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_arrow_back"
-        app:menu="@menu/top_app_bar"
         app:title="কালিমা সমূহ" />
 
     <ScrollView

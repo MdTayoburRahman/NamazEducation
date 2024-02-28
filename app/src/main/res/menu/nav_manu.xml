@@ -29,10 +29,6 @@
         android:icon="@drawable/ic_baseline_android"
         android:title="More Apps" />
 
-    <item
-        android:id="@+id/about"
-        android:icon="@drawable/ic_baseline_about"
-        android:title="About" />
 
     <item android:id="@+id/exitid"
         android:icon="@drawable/ic_baseline_exit"

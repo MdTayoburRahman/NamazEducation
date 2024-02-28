@@ -15,7 +15,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="তাসবীহ সমূহ"
-        app:menu="@menu/top_app_bar"
         app:navigationIcon="@drawable/ic_arrow_back" />
 
     <TextView

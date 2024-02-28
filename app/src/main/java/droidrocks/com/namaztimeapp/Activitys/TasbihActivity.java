@@ -63,11 +63,7 @@ public class TasbihActivity extends AppCompatActivity {
 
         topAppBar.setOnMenuItemClickListener(item -> {
 
-            if (item.getItemId() == R.id.about) {
 
-                AppUtils.showAboutAlert(this);
-                return true;
-            }
 
             return false;
         });

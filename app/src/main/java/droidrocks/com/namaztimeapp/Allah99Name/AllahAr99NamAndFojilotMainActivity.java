@@ -264,11 +264,6 @@ public class AllahAr99NamAndFojilotMainActivity extends AppCompatActivity implem
 
         topAppBar.setOnMenuItemClickListener(item -> {
 
-            if (item.getItemId() == R.id.about) {
-
-                AppUtils.showAboutAlert(this);
-                return true;
-            }
 
             return false;
         });

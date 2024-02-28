@@ -13,8 +13,8 @@ import android.webkit.WebView;
 
 import com.bumptech.glide.Glide;
 
-import droidrocks.com.namaztimeapp.API.OnPostClickListener;
-import droidrocks.com.namaztimeapp.API.PostDataModel;
+import droidrocks.com.namaztimeapp.Api.OnPostClickListener;
+import droidrocks.com.namaztimeapp.Api.PostDataModel;
 import droidrocks.com.namaztimeapp.databinding.ActivityPostViewBinding;
 
 public class PostViewActivity extends AppCompatActivity  {
@@ -26,12 +26,7 @@ public class PostViewActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         binding = ActivityPostViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        binding.toolbar.setNavigationOnClickListener(v -> finish());
 
         binding.postTitle.setText(getIntent().getStringExtra("title"));
         binding.dateOfPost.setText(getIntent().getStringExtra("date"));

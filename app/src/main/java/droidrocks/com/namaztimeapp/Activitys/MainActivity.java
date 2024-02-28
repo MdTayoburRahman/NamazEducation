@@ -109,22 +109,15 @@
         tasbih.setOnClickListener(this);
         allah_99Name.setOnClickListener(this);
         kalima.setOnClickListener(this);
+        binding.islamicBlog.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, BlogPostActivity.class));
+        });
 
     }
 
     private void topBar() {
 
         topAppBar = findViewById(R.id.topAppBar);
-        topAppBar.setOnMenuItemClickListener(item -> {
-
-            if (item.getItemId() == R.id.about) {
-                AppUtils.showAboutAlert(MainActivity.this);
-                return true;
-            }
-
-
-            return false;
-        });
     }
 
 
@@ -179,9 +172,7 @@
                     startActivity(Intent.createChooser(Email, "Send Feedback:"));
 
                 }
-                if (item.getItemId() == R.id.about) {
-                    AppUtils.showAboutAlert(MainActivity.this);
-                }
+
                 if (item.getItemId() == R.id.shareid) {
                     Uri url = Uri.parse("http://play.google.com/store/apps/details?id=" + Objects.requireNonNull(getApplicationContext()).getPackageName());
 
