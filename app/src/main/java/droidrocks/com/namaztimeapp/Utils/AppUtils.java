@@ -63,10 +63,10 @@ public class AppUtils {
             context.getPackageManager()
                     .getPackageInfo("com.facebook.katana", 0); //Checks if FB is even installed.
             return new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("fb://groups/235096546107840")); //Trys to make intent with FB's URI
+                    Uri.parse("fb://groups/1966115910483747")); //Trys to make intent with FB's URI
         } catch (Exception e) {
             return new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.facebook.com/groups/235096546107840")); //catches and opens a url to the desired page
+                    Uri.parse("https://www.facebook.com/groups/1966115910483747")); //catches and opens a url to the desired page
         }
     }
 

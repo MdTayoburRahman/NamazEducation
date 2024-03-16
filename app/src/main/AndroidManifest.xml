@@ -21,16 +21,34 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="s">
         <activity
-            android:name=".Activitys.HadithActivity"
+            android:name=".Activitys.NabiStoryDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.NabiStoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity"
             android:exported="false" />
         <activity
             android:name=".Activitys.BlogPostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity"
             android:exported="false" />
         <activity
             android:name=".Activitys.BrowserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity"
             android:exported="false" />
         <activity
             android:name=".Activitys.PostViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -49,74 +67,92 @@
         <activity
             android:name=".kalima.KalimaActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Allah99Name.AllahMainActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Allah99Name.AllahAr99NamAndFojilotMainActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.TasbihActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ImportentSurah.ImportantSuraActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.ContentViewActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamazPoddotiMainActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamazerNiyotActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamzerPrathomikBisoyActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NamazerDowaMainActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".NamazShikkha.NanazShikkahActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Tools.InternetCheckActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.RakatTableActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.OjurNiyomActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".kibla.CompassActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ImportentSurah.SuraContentView"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".kalima.KalimaContentView"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.MainActivity"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
             tools:ignore="LockedOrientationActivity" />
 
         <service

@@ -50,6 +50,10 @@
         দ্বিতীয় অবস্থা: সন্দেহযুক্ত দু‘টি দিকের কোনটাই প্রাধান্য পায় না। এ অবস্থায় নিশ্চিত দিকটির উপর ভিত্তি করবে। অর্থাৎ কম সংখ্যাটি নির্ধারণ করে বাকী নামায পূর্ণ করবে। তারপর সাহু সিজদা করে সালাম ফিরাবে। একই নামাজে সিজদায়ে সাহু করার একাধিক কারণ পাওয়া গেলেও একটি সিজদায়ে সাহু করলেই হবে।</string>
     <string name="close">Close</string>
     <string name="send_email">Send Email</string>
+    <string name="join_facebook_group">Join Facebook Group</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="developer_info">Developer info</string>
 
 
 </resources>

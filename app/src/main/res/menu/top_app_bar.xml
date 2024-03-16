@@ -2,11 +2,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+    <item
+        android:id="@+id/fb_group"
+        android:contentDescription="@string/join_facebook_group"
+        android:icon="@drawable/ic_facebook"
+        android:title="@string/join_facebook_group"
+        app:showAsAction="always" />
+
+
+
+
+
+
+    <item
+        android:id="@+id/privacy"
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:title="@string/privacy_policy" />
+
+    <item
+        android:id="@+id/terms_condition"
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:title="@string/terms_amp_conditions" />
+
+
 
     <item
         android:id="@+id/about"
-        android:title="about"
-        android:contentDescription="know more more about this application"
+        android:icon="@drawable/ic_baseline_about"
+        android:title="@string/developer_info"
         app:showAsAction="never" />
+
 
 </menu>

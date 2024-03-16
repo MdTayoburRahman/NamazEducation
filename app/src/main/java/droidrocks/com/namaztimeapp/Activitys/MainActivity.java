@@ -4,15 +4,20 @@
  import android.annotation.SuppressLint;
  import android.app.AlertDialog;
  import android.content.ActivityNotFoundException;
+ import android.content.Context;
  import android.content.Intent;
  import android.content.pm.ActivityInfo;
+ import android.content.pm.PackageInfo;
  import android.net.Uri;
  import android.os.Bundle;
  import android.util.Log;
+ import android.view.LayoutInflater;
  import android.view.MenuItem;
  import android.view.View;
  import android.view.WindowManager;
+ import android.widget.Button;
  import android.widget.LinearLayout;
+ import android.widget.TextView;
 
  import androidx.activity.OnBackPressedCallback;
  import androidx.annotation.NonNull;
@@ -32,6 +37,7 @@
  import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
  import com.shurajcodx.appratingdialog.AppRatingDialog;
 
+ import java.util.Calendar;
  import java.util.List;
  import java.util.Objects;
 
@@ -50,9 +56,10 @@
 
      private static final String TAG = "MainActivity";
      private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
-    private Toolbar topAppBar;
-    private ActivityMainBinding binding;
+     private NavigationView navigationView;
+     private androidx.appcompat.app.AlertDialog alertDialog;
+     private Toolbar topAppBar;
+     private ActivityMainBinding binding;
 
 
 
@@ -64,8 +71,6 @@
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         // check internet First
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         init();
         topBar();
         SetupNavDrawer();
@@ -112,13 +117,91 @@
         binding.islamicBlog.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, BlogPostActivity.class));
         });
+        binding.nobiStory.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this,NabiStoryActivity.class));
+        });
 
     }
 
-    private void topBar() {
+     private void topBar() {
 
-        topAppBar = findViewById(R.id.topAppBar);
-    }
+         topAppBar = binding.topAppBar;
+         topAppBar.setOnMenuItemClickListener(item -> {
+
+
+             if (item.getItemId() == R.id.fb_group) {
+                 startActivity(AppUtils.getOpenFacebookIntent(MainActivity.this));
+                 return true;
+             }
+             if (item.getItemId() == R.id.privacy) {
+
+                 startActivity(new Intent(MainActivity.this, BrowserActivity.class)
+                         .putExtra("pageFileName", "privacy.html")
+                         .putExtra("pageTitle", "Privacy Policy")
+                 );
+             }
+             if (item.getItemId() == R.id.terms_condition) {
+
+                 startActivity(new Intent(MainActivity.this, BrowserActivity.class)
+                         .putExtra("pageFileName", "terms.html")
+                         .putExtra("pageTitle", "Terms & Conditions"));
+
+             }
+
+             if (item.getItemId() == R.id.about) {
+                 showAboutAlert(MainActivity.this);
+             }
+             return false;
+         });
+
+
+
+     }
+
+     @SuppressLint("SetTextI18n")
+     public void showAboutAlert(Context context) {
+         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(context);
+         LayoutInflater layoutInflater = this.getLayoutInflater();
+         View view = layoutInflater.inflate(R.layout.about_app_layout, null);
+         TextView appVersionText = view.findViewById(R.id.app_version);
+
+         Button button = view.findViewById(R.id.closeBTN);
+         Button emailButton = view.findViewById(R.id.sendEmailBTN);
+
+
+         try {
+             PackageInfo pInfo = null;
+             pInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+             String version = pInfo.versionName;
+             int year = Calendar.getInstance().get(Calendar.YEAR);
+             String copyright = year + " ©Md Tayobur Rahman - All rights reserved";
+             String website = "\n www.droidrocks.com \n tayoburrahman119@gmail.com";
+             appVersionText.setText(copyright + website + "\n\n App Version - " + version);
+
+         } catch (Exception e) {
+             e.printStackTrace();
+         }
+         emailButton.setOnClickListener(v -> {
+             Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                     "mailto", "tayoburrahman119@gmail.com", null));
+             intent.putExtra(Intent.EXTRA_SUBJECT, "Regarding Hisabi App -");
+             startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+         });
+
+
+         button.setOnClickListener(view1 -> {
+             if (alertDialog != null) {
+                 alertDialog.dismiss();
+             }
+         });
+
+
+         builder.setView(view);
+         builder.setCancelable(true);
+         alertDialog = builder.create();
+         alertDialog.show();
+
+     }
 
 
 

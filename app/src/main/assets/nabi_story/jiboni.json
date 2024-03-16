@@ -1,0 +1,125 @@
+{
+    "status": "success",
+    "jiboni":[
+        {
+            "title": "হযরত আদম (আঃ)",
+            "text_file": "nabi_adam_a.txt",
+            "image": "nabi_adam_a.jpg" 
+        },
+        {
+            "title": "হযরত আইয়্যুব (আঃ)",
+            "text_file": "nabi_ayuub_a.txt",
+            "image": "nabi_ayuub_a.jpg" 
+            
+        },
+        {
+            "title": "হজরত দাউদ (আ)",
+            "text_file": "nabi_daud_a.txt",
+            "image": "nabi_daud_a.jpg" 
+            
+        },
+        {
+            "title": "হযরত হারুন (আঃ)",
+            "text_file": "nabi_harun_a.txt",
+            "image": "nabi_harun_a.jpg" 
+            
+        },
+        {
+            "title": "হযরত হুদ (আঃ)",
+            "text_file": "nabi_hud_a.txt",
+            "image": "nabi_hud_a.jpg" 
+            
+        },
+        {
+            "title": "নবী ইবরাহীম (আ)",
+            "text_file": "nabi_ibrahim_a.txt",
+            "image": "nabi_ibrahim_a.jpg"
+            
+        },
+        {
+            "title": "হযরত ইলিয়াস (আ.)",
+            "text_file": "nabi_ilyas_a.txt",
+            "image": "nabi_ilyas_a.jpg"
+            
+        },
+        {
+            "title": "হযরত ঈসা (আঃ)",
+            "text_file": "nabi_isa_a.txt",
+            "image": "nabi_isa_a.jpg"
+        
+        },
+        {
+            "title": "হযরত ইসহাক (আঃ)",
+            "text_file": "nabi_ishaq_a.txt",
+            "image": "nabi_ishaq_a.jpg"
+            
+        },
+        {
+            "title": "হজরত ইসমাইল (আ.)",
+            "text_file": "nabi_ismail_a.txt",
+            "image": "nabi_ismail_a.jpg"
+            
+        },
+        {
+            "title": "হযরত মুহাম্মাদ (সাঃ)",
+            "text_file": "nabi_muhammad_s_a.txt",
+            "image": "nabi_muhammad_s_a.jpg"
+            
+        },
+        {
+            "title": "হযরত মুসা (আঃ)",
+            "text_file": "nabi_musa_a.txt",
+            "image": "nabi_musa_a.jpg"
+            
+        },
+        {
+            "title": "হজরত নুহের (আ.)",
+            "text_file": "nabi_nuh_a.txt",
+            "image": "nabi_nuh_a.jpg"
+            
+        },
+        {
+            "title": "হজরত সালেহ (আ.)",
+            "text_file": "nabi_saleh_a.txt",
+            "image": "nabi_saleh_a.jpg"
+            
+        },
+        {
+            "title": " হজরত শোয়াইব (আ.)",
+            "text_file": "nabi_shuiab_a.txt",
+            "image": "nabi_shuiab_a.jpg"
+            
+        },
+        {
+            "title": "হযরত সোলায়মান (আ)",
+            "text_file": "nabi_suleiman_a.txt",
+            "image": "nabi_suleiman_a.jpg"
+            
+        },
+        {
+            "title": "হজরত ইউনুস (আ.)",
+            "text_file": "nabi_unus_a.txt",
+            "image": "nabi_unus_a.jpg"
+            
+        },
+        {
+            "title": "হযরত ইয়াহিয়া (আঃ)",
+            "text_file": "nabi_yahya_a.txt",
+            "image": "nabi_yahya_a.jpg"
+            
+        },
+        {
+            "title": "হজরত ইউসুফ (আ.)",
+            "text_file": "nabi_yusuf_a.txt",
+            "image": "nabi_yusuf_a.jpg"
+            
+        },
+        {
+            "title": "হজরত জাকারিয়া (আ.)",
+            "text_file": "nabi_zakariya_a.txt",
+            "image": "nabi_zakariya_a.jpg"
+            
+        }
+        
+    ]
+}

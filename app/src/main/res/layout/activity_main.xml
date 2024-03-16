@@ -33,6 +33,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_menu_24dp"
+            app:menu="@menu/top_app_bar"
             app:title="@string/app_name" />
         
         <View
@@ -297,7 +298,7 @@
                 android:weightSum="3">
 
                 <LinearLayout
-                    android:id="@+id/hadithCard"
+                    android:id="@+id/nobiStory"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -319,7 +320,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="হাদিস শরীফ"
+                            android:text="নবীদের জীবনী"
                             android:textSize="14sp" />
 
 
