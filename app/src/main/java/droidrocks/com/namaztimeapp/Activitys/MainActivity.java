@@ -120,7 +120,9 @@
         binding.nobiStory.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this,NabiStoryActivity.class));
         });
-
+        binding.ruqyah.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, RuqyahGroupActivity.class));
+        });
     }
 
      private void topBar() {

@@ -21,35 +21,41 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="s">
         <activity
-            android:name=".Activitys.NabiStoryDetailsActivity"
+            android:name=".Activitys.RuqyahGroupActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false" />
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:name=".Activitys.NabiStoryDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.NabiStoryActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false" />
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.BlogPostActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false" />
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.BrowserActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false" />
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activitys.PostViewActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false">
+            tools:ignore="LockedOrientationActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

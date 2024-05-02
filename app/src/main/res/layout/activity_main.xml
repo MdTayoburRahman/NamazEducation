@@ -32,10 +32,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/ic_menu_24dp"
             app:menu="@menu/top_app_bar"
+            app:navigationIcon="@drawable/ic_menu_24dp"
             app:title="@string/app_name" />
-        
+
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
@@ -320,7 +320,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="নবীদের জীবনী"
+                            android:text="@string/nobi_jiboni"
                             android:textSize="14sp" />
 
 
@@ -430,7 +430,40 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="ইসলামিক ব্লগ"
+                            android:text="@string/islamic_blog"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ruqyah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="2sp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:src="@drawable/ic_ruqyah" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ruqyah_treatments"
                             android:textSize="14sp" />
 
 
@@ -442,11 +475,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-
-        
-
-       
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

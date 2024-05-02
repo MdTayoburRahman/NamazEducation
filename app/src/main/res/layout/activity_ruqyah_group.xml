@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activitys.NabiStoryActivity">
+    tools:context=".Activitys.RuqyahGroupActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/nobi_jiboni"
+        app:title="@string/ruqyah_treatments"
         app:navigationIcon="@drawable/ic_baseline_arrow_left_24" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -27,5 +27,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />.
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
