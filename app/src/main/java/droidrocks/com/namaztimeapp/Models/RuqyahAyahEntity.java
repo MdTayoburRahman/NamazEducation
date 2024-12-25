@@ -31,6 +31,16 @@ public class RuqyahAyahEntity {
     public RuqyahAyahEntity() {
     }
 
+    public RuqyahAyahEntity(String audiopath, String ayahArabic, String ayahBangla, String ayahNote, int ayahNumber, String ayahTitle, int groupId, int id) {
+      this.audiopath = audiopath;
+      this.ayah_arabic = ayahArabic;
+      this.ayah_bangla = ayahBangla;
+      this.ayah_note = ayahNote;
+      this.ayah_number = ayahNumber;
+      this.ayah_title = ayahTitle;
+      this.group_id = groupId;
+      this.id = id;
+    }
 
 
     public String getAudiopath() {

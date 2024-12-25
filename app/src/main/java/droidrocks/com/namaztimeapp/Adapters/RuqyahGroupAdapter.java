@@ -1,6 +1,7 @@
 package droidrocks.com.namaztimeapp.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import droidrocks.com.namaztimeapp.Activitys.RuqyahContentActivity;
 import droidrocks.com.namaztimeapp.Models.RuqyahGroupEntity;
 import droidrocks.com.namaztimeapp.R;
 import droidrocks.com.namaztimeapp.databinding.RuqyahGroupItemRawBinding;
@@ -31,7 +33,9 @@ public class RuqyahGroupAdapter extends RecyclerView.Adapter<RuqyahGroupAdapter.
     @NonNull
     @Override
     public RuqyahGroupAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new RuqyahGroupAdapter.MyViewHolder(LayoutInflater.from(context).inflate(R.layout.ruqyah_group_item_raw, parent, false));
+        return new RuqyahGroupAdapter
+                .MyViewHolder(LayoutInflater.from(context)
+                .inflate(R.layout.ruqyah_group_item_raw, parent, false));
 
     }
 
@@ -49,6 +53,13 @@ public class RuqyahGroupAdapter extends RecyclerView.Adapter<RuqyahGroupAdapter.
         holder.binding.itemCard.setOnClickListener(view -> {
             view.startAnimation(clickAnim);
             Log.d(TAG, "onBindViewHolder: clicked");
+            // Create an Intent
+            Intent intent = new Intent(context, RuqyahContentActivity.class);
+            // Put the RuqyahGroupEntity object as an extra in the Intent
+            intent.putExtra("ruqyah_group", entity);
+            // Start the receiving activity
+            context.startActivity(intent);
+
         });
 
     }

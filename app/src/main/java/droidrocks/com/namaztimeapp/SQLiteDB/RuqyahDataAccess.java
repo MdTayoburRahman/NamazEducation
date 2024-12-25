@@ -4,10 +4,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import droidrocks.com.namaztimeapp.Models.RuqyahAyahEntity;
 import droidrocks.com.namaztimeapp.Models.RuqyahGroupEntity;
 
 /** video tutorial here - https://www.youtube.com/watch?v=rziyVBKEU50
@@ -17,6 +19,7 @@ import droidrocks.com.namaztimeapp.Models.RuqyahGroupEntity;
 
 
 public class RuqyahDataAccess {
+    public static final String TAG = "RuqyahDataAccess";
     private SQLiteOpenHelper openHelper;
     private SQLiteDatabase db;
     private static RuqyahDataAccess instance;
@@ -50,22 +53,6 @@ public class RuqyahDataAccess {
         }
     }
 
-    //query data from database
-/**
- * this is an example below how to get data
- *
- * public String getData(String name){
-        cursor = db.rawQuery("SELECT Address FROM tableName WHERE NAME = '"+name+"'",new String[]{});
-        StringBuffer stringBuffer = new StringBuffer();
-        while (cursor.moveToNext()){
-            String address  = cursor.getString(0);
-            stringBuffer.append(""+address);
-        }
-        return stringBuffer.toString();
-    }
- */
-
-
 public List<RuqyahGroupEntity> getRuqyahGroupList(){
     List<RuqyahGroupEntity> ruqyahGroupList = new ArrayList<>();
     if (ruqyahGroupList.size()>0){
@@ -83,44 +70,34 @@ public List<RuqyahGroupEntity> getRuqyahGroupList(){
     return ruqyahGroupList;
 }
 
-
-
-/*    public List<PoetDataModel> getPoetList(){
-        List<PoetDataModel> kobilList = new ArrayList<>();
-        if (kobilList.size()>0){
-            kobilList.clear();
-        }
-        cursor = db.rawQuery("SELECT id,author_name,aid FROM author_table",null);
-        if (cursor.moveToFirst()){
-            do {
-                int id = cursor.getInt(0);
-                String author = cursor.getString(1);
-                String aid = cursor.getString(2);
-                kobilList.add(new PoetDataModel(id,author,aid));
-            }while (cursor.moveToNext());
-        }
-        return kobilList;
+public List<RuqyahAyahEntity> getRuqyahAyahListByGroupId(RuqyahGroupEntity ruqyahGroupEntity) {
+    List<RuqyahAyahEntity> ruqyahAyahList = new ArrayList<>();
+    if (ruqyahAyahList.size()>0){
+        ruqyahAyahList.clear();
     }
+    cursor = db.rawQuery("SELECT * FROM ruqyah_ayah WHERE group_id = "+ruqyahGroupEntity.getId(),null);
+    if (cursor.moveToFirst()){
+        do {
 
-    public List<PoemDataModel> getPoemList(){
-        List<PoemDataModel> kobitaList = new ArrayList<>();
-        if (kobitaList.size()>0){
-            kobitaList.clear();
-        }
-        cursor = db.rawQuery("SELECT id,poem_title,pid,poem_author,poem_lines,poem_linecount FROM poem_table",null);
-        if (cursor.moveToFirst()){
-            do {
-                int id = cursor.getInt(0);
-                String poem_title = cursor.getString(1);
-                String pid = cursor.getString(2);
-                String poem_author = cursor.getString(3);
-                String poem_lines = cursor.getString(4);
-                String poem_linecount = cursor.getString(5);
-                kobitaList.add(new PoemDataModel(id,poem_title,pid,poem_author,poem_lines,poem_linecount));
-            }while (cursor.moveToNext());
-        }
-        return kobitaList;
-    }*/
+            int id = cursor.getInt(0);
+            int group_id = cursor.getInt(1);
+            int ayah_number = cursor.getInt(2);
+            String ayah_title = cursor.getString(3);
+            String ayah_arabic = cursor.getString(4);
+            String ayah_bangla = cursor.getString(5);
+            String ayah_note = cursor.getString(6);
+            String audiopath = cursor.getString(7);
+
+            RuqyahAyahEntity entity = new RuqyahAyahEntity(audiopath,ayah_arabic,ayah_bangla,ayah_note,ayah_number,ayah_title,group_id,id);
+            ruqyahAyahList.add(entity);
+            Log.d(TAG, "getRuqyahAyahListByGroupId: --------- "+entity);
+        }while (cursor.moveToNext());
+    }
+    return ruqyahAyahList;
+}
+
+
+
 
 
 
