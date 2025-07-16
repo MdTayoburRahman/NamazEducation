@@ -35,7 +35,7 @@
  import com.karumi.dexter.PermissionToken;
  import com.karumi.dexter.listener.PermissionRequest;
  import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
- import com.shurajcodx.appratingdialog.AppRatingDialog;
+
 
  import java.util.Calendar;
  import java.util.List;
@@ -75,7 +75,7 @@
         topBar();
         SetupNavDrawer();
         checkAllPermission();
-        RateAppAlert();
+
         backPressed();
         FirebaseMessaging.getInstance().setAutoInitEnabled(true);
         try {
@@ -374,18 +374,6 @@
 
     }
 
-    public void RateAppAlert() {
-
-        // documandation here - https://github.com/shurajcodx/android-app-rating-dialog
-        @SuppressLint("UseCompatLoadingForDrawables") final AppRatingDialog appRatingDialog = new AppRatingDialog.Builder(this)
-                .setIconDrawable(true, getDrawable(R.drawable.ic_launcher_round)) // default icon isn't show
-                .setTriggerCount(2)
-                .setRepeatCount(5)
-                .build();
-        appRatingDialog.show();
-
-
-    }
 
 
      private void backPressed() {
